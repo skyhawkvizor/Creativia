@@ -8,17 +8,18 @@
 	<!-- <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/normalize.css"> -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="css/slick.css"> -->
 	<script defer src="libs/jquery.js"></script>
 	<script defer src="js/breakpoint.js"></script>
 	<script defer src="libs/slick.js"></script>
 	<!-- <script defer src="js/da.js"></script> -->
+	<script src="js/modernizr-custom.js"></script>
 	<script defer src="js/script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9twy0yJJIpaSfqP8_Mvsm-xveZ0UwIrk&callback=initMap"
+		async defer>
+		</script>
 </head>
 
 <body class="body">
-
-
 	<header class="header container full-width">
 		<div class="header__logo logo">
 			<a href="#" class="logo__link">
@@ -79,7 +80,7 @@
 		<div class="header__burger burger"><span></span></div>
 	</header>
 	<main class="main">
-		<section class="slider-section">
+		<!-- <section class="slider-section">
 			<div class="slider-section__slider slider">
 				<div class="slider__slide slide">
 					<div class="slide__content container">
@@ -1557,7 +1558,7 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 		<section class="section-map">
 			<div class="section-map__title section-title section-title_map">
 				<h2 class="section-title__title section-title__title_map">
@@ -1575,59 +1576,29 @@
 				</p>
 			</div>
 			<div class="section-map__content">
-				<picture class="section-map__map">
-					<source
-						srcset="img/map/map.webp 1x, img/map/map@2x.webp 2x, img/map/map@3x.webp 3x, img/map/map@4x.webp 4x"
-						type="image/webp">
-					<img src="img/map/map.png" srcset="img/map/map@2x.png 2x, img/map/map@3x.png 3x, img/map/map@4x.png 4x"
-						alt="img">
-				</picture>
-				<address class="section-map__adress">
-					egypt, creativia
-					Address: cairo 123
-					Phone: +0201091915171
-					Email: gfx3mr@gmail.com
-				</address>
-				<form action="#" method="POST" class="section-map__form form-map">
-					<div class="form-map__title">
-						send message
-					</div>
-					<input type="text" name="name" class="form-map__input form-map__input_name" placeholder="Name">
-					<input type="email" name="email" class="form-map__input form-map__input_email" placeholder="Email">
-					<input type="text" name="subject" class="form-map__input form-map__input_subject" placeholder="Subject">
-					<textarea name="textarea" class="form-map__input form-map__input_textarea"></textarea>
-					<button type="submit" name="button" class="form-map__button">submit</button>
-				</form>
+				<div class="section-map__map"></div>
+				<div class="section-map__form-wrap">
+					<form action="#" method="POST" class="section-map__form form-map">
+						<div class="form-map__title">
+							send message
+						</div>
+						<input type="text" name="name" class="form-map__input form-map__input_name" placeholder="Name">
+						<input type="email" name="email" class="form-map__input form-map__input_email" placeholder="Email">
+						<input type="text" name="subject" class="form-map__input form-map__input_subject"
+							placeholder="Subject">
+						<textarea name="textarea" class="form-map__input form-map__input_textarea"></textarea>
+						<button type="submit" name="button" class="form-map__button">submit</button>
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 
 	</footer>
-	<a class="a">111</a>
-	<a href="" class="a">222</a>
+	<!-- <a class="a">111</a>
+	<a href="" class="a">222</a> -->
 
-	<!-- <div class="slider">
-		<div class="im">
-			<h2 class="h2">
-				lololo
-			</h2>
-			<img src="img/slider/slide1.png">
-		</div>
-		<div class="im">
-			<h2 class="h2">
-				lololo
-			</h2>
-			<img src="img/slider/slide1.png">
-		</div>
-		<div class="im">
-			<h2 class="h2">
-				lololo
-			</h2>
-			<img src="img/slider/slide1.png">
-		</div>
-
-	</div> -->
 
 </body>
 
