@@ -16,9 +16,10 @@ $('.burger').on('click', function (e) {
 $(window).setBreakpoints({
 	distinct: true,
 	breakpoints: [
-		1000,
-		900,
-		800,
+		984,
+		884,
+		784,
+		684,
 		600
 	]
 });
@@ -347,8 +348,77 @@ $('.follow-links__item').on('mouseleave', function (e) {
 var overlay;
 var gmap;
 
+// function initMap() {
+// 	var myLatLng = new google.maps.LatLng(54.42347312628039, 18.58439486416992);
+// 	var mapOptions = {
+// 		zoom: 14,
+// 		center: myLatLng,
+// 		mapTypeId: google.maps.MapTypeId.READMAP,
+// 		zoomControl: false,
+// 		rotateControl: false,
+// 		streetViewControl: false,
+// 		fullscreenControl: false,
+// 		mapTypeControl: false,
+// 		draggble: true,
+// 		zoomControl: false,
+// 		// scaleControl: true,
+// 		// restriction: {
+// 		// 	latLngBounds: {
+// 		// 		north: -10,
+// 		// 		south: -40,
+// 		// 		east: 160,
+// 		// 		west: 100,
+// 		// 	},
+// 		// },
+
+// 	};
+
+// 	gmap = new google.maps.Map(document.querySelector('.section-map__map'), mapOptions);
+
+// 	function HTMLMarker(lat, lng) {
+// 		this.lat = lat;
+// 		this.lng = lng;
+// 		this.pos = new google.maps.LatLng(lat, lng);
+// 	}
+
+// 	HTMLMarker.prototype = new google.maps.OverlayView();
+// 	HTMLMarker.prototype.onRemove = function () { }
+
+// 	const html = 'egypt, creativia\n' +
+// 		'Address: cairo 123\n' +
+// 		'Phone: +0201091915171\n' +
+// 		'Email: gfx3mr@gmail.com\n'
+
+// 	//init your html element here
+// 	HTMLMarker.prototype.onAdd = function () {
+// 		adress = document.createElement('adress');
+// 		adress.className = "section-map__adress";
+// 		adress.innerHTML = html;
+// 		div = document.createElement('div');
+// 		div.className = "section-map__marker";
+// 		div.appendChild(adress);
+// 		var panes = this.getPanes();
+// 		panes.overlayImage.appendChild(div);
+// 	}
+
+// 	HTMLMarker.prototype.draw = function () {
+// 		var overlayProjection = this.getProjection();
+// 		var position = overlayProjection.fromLatLngToDivPixel(this.pos);
+// 		var panes = this.getPanes();
+// 		panes.overlayImage.style.left = position.x - 235 + 'px';
+// 		panes.overlayImage.style.top = position.y - 223 + 'px';
+// 	}
+
+// 	//to use it
+// 	var htmlMarker = new HTMLMarker(54.412870202909744, 18.56750317684111);
+// 	htmlMarker.setMap(gmap);
+
+// }
+
+
+
 function initMap() {
-	var myLatLng = new google.maps.LatLng(54.42347312628039, 18.58439486416992);
+	var myLatLng = new google.maps.LatLng(54.412870202909744, 18.56750317684111);
 	var mapOptions = {
 		zoom: 14,
 		center: myLatLng,
@@ -358,7 +428,17 @@ function initMap() {
 		streetViewControl: false,
 		fullscreenControl: false,
 		mapTypeControl: false,
-		draggble: true
+		draggble: true,
+		zoomControl: false,
+		// scaleControl: true,
+		// restriction: {
+		// 	latLngBounds: {
+		// 		north: -10,
+		// 		south: -40,
+		// 		east: 160,
+		// 		west: 100,
+		// 	},
+		// },
 
 	};
 
@@ -402,36 +482,46 @@ function initMap() {
 	var htmlMarker = new HTMLMarker(54.412870202909744, 18.56750317684111);
 	htmlMarker.setMap(gmap);
 
+
+
 }
 
-// $(window).bind('enterBreakpoint1000', function () {
-// 	gmap.panBy(0, -40)
-// });
 
 
 // var myLatLng = 54.42347312628039, 18.58439486416992;
 
-// $(window).bind('exitBreakpoint1000', function () {
-// 	gmap.panTo([54.42347312628039, 18])
-// });
-// $(window).bind('enterBreakpoint900', function () {
-// 	gmap.panBy(0, -40)
-// });
-// $(window).bind('exitBreakpoint900', function () {
-// 	gmap.panBy(0, 40)
-// });
-// $(window).bind('enterBreakpoint900', function () {
-// 	gmap.panBy(0, 20)
-// });
-// $(window).bind('exitBreakpoint900', function () {
-// 	gmap.panBy(0, 200)
-// });
-// $(window).bind('enterBreakpoint800', function () {
-// 	gmap.panBy(30, 0)
-// });
-// $(window).bind('exitBreakpoint800', function () {
-// 	gmap.panBy(-30, 0)
-// });
+$(window).bind('enterBreakpoint984', function () {
+	console.log('e984')
+	gmap.panBy(217, -185)
+});
+$(window).bind('exitBreakpoint984', function () {
+	console.log('x984')
+	gmap.panBy(-217, 185)
+});
+$(window).bind('enterBreakpoint884', function () {
+	console.log('e884')
+	gmap.panBy(200, -165)
+});
+$(window).bind('exitBreakpoint884', function () {
+	console.log('x884')
+	gmap.panBy(-200, 165)
+});
+$(window).bind('enterBreakpoint784', function () {
+	console.log('e784')
+	gmap.panBy(170, -145)
+});
+$(window).bind('exitBreakpoint784', function () {
+	console.log('x784')
+	gmap.panBy(-170, 145)
+});
+$(window).bind('enterBreakpoint684', function () {
+	console.log('e684')
+	gmap.panBy(140, -135)
+});
+$(window).bind('exitBreakpoint684', function () {
+	console.log('x684')
+	gmap.panBy(-140, 135)
+});
 
 
 // map.setCenter(mymarker.getPoint());
