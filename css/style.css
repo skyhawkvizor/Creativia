@@ -618,6 +618,7 @@ button {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato/lato-v17-latin-300.woff2") format("woff2"), url("../fonts/Lato/lato-v17-latin-300.woff") format("woff");
 }
 
@@ -626,6 +627,7 @@ button {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato/lato-v17-latin-regular.woff2") format("woff2"), url("../fonts/Lato/lato-v17-latin-regular.woff") format("woff");
 }
 
@@ -634,6 +636,7 @@ button {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato/lato-v17-latin-700.woff2") format("woff2"), url("../fonts/Lato/lato-v17-latin-700.woff") format("woff");
 }
 
@@ -642,6 +645,7 @@ button {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/Raleway/raleway-v18-latin-regular.woff2") format("woff2"), url("../fonts/Raleway/raleway-v18-latin-regular.woff") format("woff");
 }
 
@@ -650,6 +654,7 @@ button {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/Raleway/raleway-v18-latin-700.woff2") format("woff2"), url("../fonts/Raleway/raleway-v18-latin-700.woff") format("woff");
 }
 
@@ -657,12 +662,14 @@ button {
   font-family: "MyriadPro";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/MyriadPro/MyriadPro.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro.woff") format("woff");
 }
 
 @font-face {
   font-family: "MgOpenModata";
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/MgOpenModata/MgOpenModataRegular.ttf");
 }
 
@@ -670,6 +677,7 @@ button {
   font-family: "LatoBlack";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/LatoBlack/Lato-Black.woff") format("woff");
 }
 
@@ -677,6 +685,7 @@ button {
   font-family: "RalewaySemibold";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/RalewaySemibold/RalewaySemibold.ttf");
 }
 
@@ -833,7 +842,6 @@ html {
 
 .body {
   position: relative;
-  max-width: 1400px;
 }
 
 .body.fixed {
@@ -1224,52 +1232,10 @@ html {
 
 .no-webp .slide {
   background-image: url(../img/slider/slide1.png);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .no-webp .slide {
-    background-image: url(../img/slider/slide1@2x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .no-webp .slide {
-    background-image: url(../img/slider/slide1@3x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .no-webp .slide {
-    background-image: url(../img/slider/slide1@4x.png);
-  }
 }
 
 .webp .slide {
   background-image: url(../img/slider/slide1.webp);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .webp .slide {
-    background-image: url(../img/slider/slide1@2x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .webp .slide {
-    background-image: url(../img/slider/slide1@3x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .webp .slide {
-    background-image: url(../img/slider/slide1@4x.webp);
-  }
 }
 
 .about-section {
@@ -2115,56 +2081,22 @@ html {
 
 .no-webp .features-content__center {
   background-image: url(../img/features/1.png);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .no-webp .features-content__center {
-    background-image: url(../img/features/1@2x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .no-webp .features-content__center {
-    background-image: url(../img/features/1@3x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .no-webp .features-content__center {
-    background-image: url(../img/features/1@4x.png);
-  }
 }
 
 .webp .features-content__center {
   background-image: url(../img/features/1.webp);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .webp .features-content__center {
-    background-image: url(../img/features/1@2x.webp);
-  }
+.no-webp .features-content__center_2 {
+  background-image: url(../img/features/1.png);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .webp .features-content__center {
-    background-image: url(../img/features/1@3x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .webp .features-content__center {
-    background-image: url(../img/features/1@4x.webp);
-  }
+.webp .features-content__center_2 {
+  background-image: url(../img/features/1@4x.webp);
 }
 
 @media (max-width: 1170px) {
-  .features-content__center {
+  .features-content__center_2 {
     position: static;
     -webkit-transform: none;
             transform: none;
@@ -2348,52 +2280,10 @@ html {
 
 .no-webp .clients-section {
   background-image: url(../img/clients/bg.png);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .no-webp .clients-section {
-    background-image: url(../img/clients/bg@2x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .no-webp .clients-section {
-    background-image: url(../img/clients/bg@3x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .no-webp .clients-section {
-    background-image: url(../img/clients/bg@4x.png);
-  }
 }
 
 .webp .clients-section {
   background-image: url(../img/clients/bg.webp);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .webp .clients-section {
-    background-image: url(../img/clients/bg@2x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .webp .clients-section {
-    background-image: url(../img/clients/bg@3x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .webp .clients-section {
-    background-image: url(../img/clients/bg@4x.webp);
-  }
 }
 
 @media (max-width: 1000px) {
@@ -3643,52 +3533,10 @@ html {
 
 .no-webp .follow-section {
   background-image: url(../img/follow/bg.png);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .no-webp .follow-section {
-    background-image: url(../img/follow/bg@2x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .no-webp .follow-section {
-    background-image: url(../img/follow/bg@3x.png);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .no-webp .follow-section {
-    background-image: url(../img/follow/bg@4x.png);
-  }
 }
 
 .webp .follow-section {
   background-image: url(../img/follow/bg.webp);
-  /* @2x Images (Pixel Ratio of 1.25+) */
-  /* @3x Images (Pixel Ratio of 2.25+) */
-  /* @4x Images (Pixel Ratio of 3.25+) */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-  .webp .follow-section {
-    background-image: url(../img/follow/bg@2x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-  .webp .follow-section {
-    background-image: url(../img/follow/bg@3x.webp);
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-  .webp .follow-section {
-    background-image: url(../img/follow/bg@4x.webp);
-  }
 }
 
 @media (max-width: 1000px) {
@@ -3987,12 +3835,18 @@ html {
   width: 100%;
   height: 2.1875em;
   background-color: white;
-  border: 0.0625em solid #e7e7e7;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: #505050;
   font-family: "Lato", sans-serif;
   font-size: 1.6em;
   font-weight: 400;
   line-height: 1.5625em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .form-map__input_name {
@@ -4064,7 +3918,7 @@ html {
 
 @media (max-width: 800px) {
   .footer {
-    font-size: 7.5px;
+    font-size: 7px;
   }
 }
 
@@ -4075,6 +3929,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 5px;
   }
 }
 
