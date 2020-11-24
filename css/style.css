@@ -2087,22 +2087,6 @@ html {
   background-image: url(../img/features/1.webp);
 }
 
-.no-webp .features-content__center_2 {
-  background-image: url(../img/features/1.png);
-}
-
-.webp .features-content__center_2 {
-  background-image: url(../img/features/1@3x.webp);
-}
-
-@media (max-width: 1170px) {
-  .features-content__center_2 {
-    position: static;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
 .features-content__button {
   width: 8.6em;
   height: 2.5em;
