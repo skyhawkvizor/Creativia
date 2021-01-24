@@ -719,7 +719,7 @@ html {
   height: 10.3em;
   background-image: url(../images/header/logoBg.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 -1px;
   background-size: contain;
   z-index: 10; }
   .logo_footer {
@@ -905,9 +905,14 @@ html {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: -0.035em;
-    color: inherit; }
+    color: inherit;
+    transition: background-color 0.3s; }
+    .slide__button:hover {
+      background-color: black; }
     .slide__button_red {
       background-color: #ff0036; }
+      .slide__button_red:hover {
+        background-color: #990020; }
 
 .about-section {
   padding: 9.7em 20px 9.8em 20px;
@@ -987,7 +992,7 @@ html {
   height: 10.3em;
   background-image: url(../images/header/logoBg.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 -1px;
   background-size: contain;
   z-index: 10; }
   .logo_footer {
@@ -1301,6 +1306,7 @@ html {
       height: 1.0625em; }
 
 .portfolio-section {
+  padding: 9.6em 0px 10.9em 0px;
   background-color: #262626;
   font-size: 10px; }
   @supports (padding: 0px) {
@@ -1509,7 +1515,10 @@ html {
     font-family: "Raleway", sans-serif;
     font-size: 2em;
     font-weight: 500;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: background-color 0.3s; }
+    .features-content__button:hover {
+      background-color: #060606; }
 
 .features-menu {
   display: grid;
@@ -2035,7 +2044,10 @@ html {
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.8em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: background-color 0.3s; }
+  .bestseller-card__button:hover {
+    background-color: black; }
 
 .twitter-section {
   padding: 9.6em 20px 10em 20px;
@@ -2140,11 +2152,17 @@ html {
   align-items: center;
   background-color: #f2f2f2;
   border-radius: 50%;
-  color: #a2a2a2; }
+  color: #a2a2a2;
+  transition: background-color 0.3s; }
+  .blog__more:hover {
+    background-color: #737373; }
+    .blog__more:hover .blog__more-icon {
+      color: white; }
 
 .blog__more-icon {
   width: 2.1em;
-  height: 2.1em; }
+  height: 2.1em;
+  transition: color 0.3s; }
 
 .blog-article {
   display: grid;
@@ -2232,7 +2250,10 @@ html {
     font-family: "Lato", sans-serif;
     font-size: 1.6em;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: background-color 0.3s; }
+    .blog-article__button:hover {
+      background-color: black; }
 
 .follow-section {
   font-size: 10px;
@@ -2460,7 +2481,10 @@ html {
     font-family: "Lato", sans-serif;
     font-size: 1.6em;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: background-color 0.3s; }
+    .form-map__button:hover {
+      background-color: black; }
 
 .footer {
   padding: 3em 4.5em 2.6em 4.5em;
@@ -2492,3 +2516,11 @@ html {
     font-size: 1.6em;
     font-weight: 400;
     line-height: 1.375em; }
+
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms; }
