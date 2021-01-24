@@ -1,64 +1,53 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-	<title>Creativia</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="img/favicons/site.webmanifest">
-	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#ff0036">
-	<meta name="msapplication-TileColor" content="#262626">
+	<!-- <meta name="viewport" id="desktop"> -->
+	<meta name="robots" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Creativia">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<!-- <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/normalize.css"> -->
-
-	<link rel="preload" as="font" href="fonts/Lato/lato-v17-latin-300.woff2" type="font/woff2" crossorigin="anonymous">
-	<!-- <link rel="preload" as="font" href="fonts/Lato/lato-v17-latin-300.woff" type="font/woff"> -->
-	<link rel="preload" as="font" href="fonts/Lato/lato-v17-latin-regular.woff2" type="font/woff2"
+	<!-- <meta http-equiv="Cache-control" content="public"> -->
+	<link rel="preload" as="font" href="assets/fonts/Lato/lato-v17-latin-300.woff2" type="font/woff2"
 		crossorigin="anonymous">
-	<!-- <link rel="preload" as="font" href="fonts/Lato/lato-v17-latin-regular.woff" type="font/woff"> -->
-	<link rel="preload" as="font" href="fonts/Lato/lato-v17-latin-700.woff2" type="font/woff2" crossorigin="anonymous">
-	<!-- <link rel="preload" as="font" href="fonts/Lato/lato-v17-latin-700.woff" type="font/woff"> -->
-	<link rel="preload" as="font" href="fonts/Raleway/raleway-v18-latin-regular.woff2" type="font/woff2"
+	<link rel="preload" as="font" href="assets/fonts/Lato/lato-v17-latin-regular.woff2" type="font/woff2"
 		crossorigin="anonymous">
-	<!-- <link rel="preload" as="font" href="fonts/Raleway/raleway-v18-latin-regular.woff" type="font/woff"> -->
-	<link rel="preload" as="font" href="fonts/Raleway/raleway-v18-latin-700.woff2" type="font/woff2"
+	<link rel="preload" as="font" href="assets/fonts/Lato/lato-v17-latin-700.woff2" type="font/woff2"
 		crossorigin="anonymous">
-	<!-- <link rel="preload" as="font" href="fonts/Raleway/raleway-v18-latin-700.woff" type="font/woff"> -->
-	<link rel="preload" as="font" href="fonts/MyriadPro/MyriadPro.woff2" type="font/woff2" crossorigin="anonymous">
-	<!-- <link rel="preload" as="font" href="fonts/MyriadPro/MyriadPro.woff" type="font/woff"> -->
-	<link rel="preload" as="font" href="fonts/MgOpenModata/MgOpenModataRegular.ttf" type="font/ttf"
+	<link rel="preload" as="font" href="assets/fonts/Raleway/raleway-v18-latin-regular.woff2" type="font/woff2"
 		crossorigin="anonymous">
-	<link rel="preload" as="font" href="fonts/LatoBlack/Lato-Black.woff" type="font/woff" crossorigin="anonymous">
-	<link rel="preload" as="font" href="fonts/RalewaySemibold/RalewaySemibold.ttf" type="font/ttf"
+	<link rel="preload" as="font" href="assets/fonts/Raleway/raleway-v18-latin-700.woff2" type="font/woff2"
 		crossorigin="anonymous">
-
-	<link rel="stylesheet" href="css/style.css">
-	<script defer src="libs/jquery.js"></script>
-	<script defer src="js/breakpoint.js"></script>
-	<script defer src="libs/slick.js"></script>
-	<!-- <script defer src="js/da.js"></script> -->
-	<script src="js/modernizr-custom.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9twy0yJJIpaSfqP8_Mvsm-xveZ0UwIrk&callback=initMap"
-		async defer>
-		</script>
-	<script defer src="js/script.js"></script>
-</head>
+	<link rel="preload" as="font" href="assets/fonts/MyriadPro/MyriadPro.woff2" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" as="font" href="assets/fonts/MgOpenModata/MgOpenModataRegular.ttf" type="font/ttf"
+		crossorigin="anonymous">
+	<link rel="preload" as="font" href="assets/fonts/LatoBlack/Lato-Black.woff" type="font/woff" crossorigin="anonymous">
+	<link rel="preload" as="font" href="assets/fonts/RalewaySemibold/RalewaySemibold.ttf" type="font/ttf"
+		crossorigin="anonymous">
+	
+	<title>Creativia</title></head>
 
 <body class="body">
+
 	<header class="header container full-width">
 		<div class="header__logo logo">
 			<a href="#" class="logo__link">
 				<picture class="logo__img">
-					<source
-						srcset="img/header/Creativia.webp 1x, img/header/Creativia@2x.webp 2x, img/header/Creativia@3x.webp 3x, img/header/Creativia@4x.webp 4x"
+					<source class="lazyload"
+						data-srcset="assets/images/header/Creativia.webp 1x, assets/images/header/Creativia@2x.webp 2x, assets/images/header/Creativia@3x.webp 3x, assets/images/header/Creativia@4x.webp 4x"
 						type="image/webp">
-					<img src="img/header/Creativia.png"
-						srcset="img/header/Creativia@2x.png 2x, img/header/Creativia@3x.png 3x, img/header/Creativia@4x.png 4x"
-						alt="img">
+					<img data-src="assets/images/header/Creativia.png"
+						data-srcset="assets/images/header/Creativia@2x.png 2x, assets/images/header/Creativia@3x.png 3x, assets/images/header/Creativia@4x.png 4x"
+						width="120" height="23" alt="img">
 				</picture>
 			</a>
 		</div>
@@ -107,11 +96,20 @@
 			</ul>
 		</nav>
 		<div class="header__burger burger"><span></span></div>
-	</header>
-	<main class="main">
+	</header>	<main class="main">
+		
 		<section class="slider-section">
 			<div class="slider-section__slider slider">
+		
 				<div class="slider__slide slide">
+					<picture class="slide__img">
+						<source class="lazyload"
+							data-srcset="assets/images/slider/slide1.webp 1x, assets/images/slider/slide1@2x.webp 2x, assets/images/slider/slide1@3x.webp 3x, assets/images/1@4x.webp 4x"
+							type="image/webp">
+						<img data-src="assets/images/slider/slide1.png"
+							data-srcset="assets/images/slider/slide1@2x.png 2x, assets/images/slider/slide1@3x.png 3x, assets/images/slider/slide1@4x.png 4x"
+							width="1400" height="600" alt="img">
+					</picture>
 					<div class="slide__content container">
 						<h2 class="slide__title">
 							why <span class="slide__title-accent">creativia ?</span>
@@ -129,6 +127,14 @@
 					</div>
 				</div>
 				<div class="slider__slide slide">
+					<picture class="slide__img">
+						<source class="lazyload"
+							data-srcset="assets/images/slider/slide1.webp 1x, assets/images/slider/slide1@2x.webp 2x, assets/images/slider/slide1@3x.webp 3x, assets/images/1@4x.webp 4x"
+							type="image/webp">
+						<img data-src="assets/images/slider/slide1.png"
+							data-srcset="assets/images/slider/slide1@2x.png 2x, assets/images/slider/slide1@3x.png 3x, assets/images/slider/slide1@4x.png 4x"
+							width="1400" height="600" alt="img">
+					</picture>
 					<div class="slide__content container">
 						<h2 class="slide__title">
 							why <span class="slide__title-accent">creativia ?</span>
@@ -145,16 +151,16 @@
 						</div>
 					</div>
 				</div>
-
+		
 			</div>
 			<button class="slider-section__button slider-section__button_prev" title="prev">
 				<svg class="slider-section__icon slider-section__icon_prev">
-					<use xlink:href="img/icons/sprite.svg#down"></use>
+					<use xlink:href="assets/images/icons/sprite.svg#down"></use>
 				</svg>
 			</button>
 			<button class="slider-section__button slider-section__button_next" title="next">
 				<svg class="slider-section__icon slider-section__icon_next">
-					<use xlink:href="img/icons/sprite.svg#down"></use>
+					<use xlink:href="assets/images/icons/sprite.svg#down"></use>
 				</svg>
 			</button>
 		</section>
@@ -224,26 +230,32 @@
 				</div>
 				<div class="about-content__column about-content__column_right">
 					<div class="about-content__images images">
+		
 						<picture class="images__img images__img_left">
-							<source
-								srcset="img/about/img1.webp 1x, img/about/img1@2x.webp 2x, img/about/img1@3x.webp 3x, img/about/img1@4x.webp 4x"
+							<source class="lazyload"
+								data-srcset="assets/images/about/img1.webp 1x, assets/images/about/img1@2x.webp 2x, assets/images/about/img1@3x.webp 3x, assets/images/about/img1@4x.webp 4x"
 								type="image/webp">
-							<img src="img/about/img1.png"
-								srcset="img/about/img1@2x.png 2x, img/about/img1@3x.png 3x, img/about/img1@4x.png 4x" alt="img">
+							<img data-src="assets/images/about/img1.png"
+								data-srcset="assets/images/about/img1@2x.png 2x, assets/images/about/img1@3x.png 3x, assets/images/about/img1@4x.png 4x"
+								width="380" height="330" alt="img">
 						</picture>
+		
 						<picture class="images__img images__img_center">
-							<source
-								srcset="img/about/img2.webp 1x, img/about/img2@2x.webp 2x, img/about/img2@3x.webp 3x, img/about/img2@4x.webp 4x"
+							<source class="lazyload"
+								data-srcset="assets/images/about/img2.webp 1x, assets/images/about/img2@2x.webp 2x, assets/images/about/img2@3x.webp 3x, assets/images/about/img2@4x.webp 4x"
 								type="image/webp">
-							<img src="img/about/img2.png"
-								srcset="img/about/img2@2x.png 2x, img/about/img2@3x.png 3x, img/about/img2@4x.png 4x" alt="img">
+							<img data-src="assets/images/about/img2.png"
+								data-srcset="assets/images/about/img2@2x.png 2x, assets/images/about/img2@3x.png 3x, assets/images/about/img2@4x.png 4x"
+								width="420" height="370" alt="img">
 						</picture>
+		
 						<picture class="images__img images__img_right">
-							<source
-								srcset="img/about/img3.webp 1x, img/about/img3@2x.webp 2x, img/about/img3@3x.webp 3x, img/about/img3@4x.webp 4x"
+							<source class="lazyload"
+								data-srcset="assets/images/about/img3.webp 1x, assets/images/about/img3@2x.webp 2x, assets/images/about/img3@3x.webp 3x, assets/images/about/img3@4x.webp 4x"
 								type="image/webp">
-							<img src="img/about/img3.png"
-								srcset="img/about/img3@2x.png 2x, img/about/img3@3x.png 3x, img/about/img3@4x.png 4x" alt="img">
+							<img data-src="assets/images/about/img3.png"
+								data-srcset="assets/images/about/img3@2x.png 2x, assets/images/about/img3@3x.png 3x, assets/images/about/img3@4x.png 4x"
+								width="380" height="330" alt="img">
 						</picture>
 					</div>
 				</div>
@@ -253,11 +265,10 @@
 					<li class="about-bottom__item about-item">
 						<div class="about-item__icons hexagon hexagon_creativia">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_creativia">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-heart">
-								<use xlink:href="img/icons/sprite.svg#heart"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-heart">
+								<use xlink:href="assets/images/icons/sprite.svg#heart"></use>
 							</svg>
 						</div>
 						<div class="about-item__title">
@@ -271,11 +282,10 @@
 					<li class="about-bottom__item about-item">
 						<div class="about-item__hexagon hexagon hexagon_creativia">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_creativia">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-ok">
-								<use xlink:href="img/icons/sprite.svg#ok"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-ok">
+								<use xlink:href="assets/images/icons/sprite.svg#ok"></use>
 							</svg>
 						</div>
 						<div class="about-item__title">
@@ -289,11 +299,10 @@
 					<li class="about-bottom__item about-item">
 						<div class="about-item__hexagon hexagon hexagon_creativia">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_creativia">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-tablet">
-								<use xlink:href="img/icons/sprite.svg#tablet"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-tablet">
+								<use xlink:href="assets/images/icons/sprite.svg#tablet"></use>
 							</svg>
 						</div>
 						<div class="about-item__title">
@@ -307,11 +316,10 @@
 					<li class="about-bottom__item about-item">
 						<div class="about-item__hexagon hexagon hexagon_creativia">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_creativia">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-fire">
-								<use xlink:href="img/icons/sprite.svg#fire"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_creativia-fire">
+								<use xlink:href="assets/images/icons/sprite.svg#fire"></use>
 							</svg>
 						</div>
 						<div class="about-item__title">
@@ -337,7 +345,7 @@
 						</a>
 					</li>
 					<li class="portfolio-section__menu-item ">
-						<a href="#" class="portfolio-section__menu-link hover">
+						<a href="#" class="portfolio-section__menu-link">
 							illustration
 						</a>
 					</li>
@@ -356,16 +364,17 @@
 			<ul class="portfolio-section__content portfolio-content">
 				<li class="portfolio-content__item portfolio-item portfolio-item_wide">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/1.webp 1x, img/portfolio/1@2x.webp 2x, img/portfolio/1@3x.webp 3x, img/portfolio/1@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/1.webp 1x, assets/images/portfolio/1@2x.webp 2x, assets/images/portfolio/1@3x.webp 3x, assets/images/portfolio/1@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/1.png"
-							srcset="img/portfolio/1@2x.png 2x, img/portfolio/1@3x.png 3x, img/portfolio/1@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/1.png"
+							data-srcset="assets/images/portfolio/1@2x.png 2x, assets/images/portfolio/1@3x.png 3x, assets/images/portfolio/1@4x.png 4x"
+							width="400" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -375,16 +384,17 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_thin">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/2.webp 1x, img/portfolio/2@2x.webp 2x, img/portfolio/2@3x.webp 3x, img/portfolio/2@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/2.webp 1x, assets/images/portfolio/2@2x.webp 2x, assets/images/portfolio/2@3x.webp 3x, assets/images/portfolio/2@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/2.png"
-							srcset="img/portfolio/2@2x.png 2x, img/portfolio/2@3x.png 3x, img/portfolio/2@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/2.png"
+							data-srcset="assets/images/portfolio/2@2x.png 2x, assets/images/portfolio/2@3x.png 3x, assets/images/portfolio/2@4x.png 4x"
+							width="300" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -394,16 +404,17 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_wide">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/3.webp 1x, img/portfolio/3@2x.webp 2x, img/portfolio/3@3x.webp 3x, img/portfolio/3@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/3.webp 1x, assets/images/portfolio/3@2x.webp 2x, assets/images/portfolio/3@3x.webp 3x, assets/images/portfolio/3@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/3.png"
-							srcset="img/portfolio/3@2x.png 2x, img/portfolio/3@3x.png 3x, img/portfolio/3@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/3.png"
+							data-srcset="assets/images/portfolio/3@2x.png 2x, assets/images/portfolio/3@3x.png 3x, assets/images/portfolio/3@4x.png 4x"
+							width="400" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -413,16 +424,18 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_thin">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/4.webp 1x, img/portfolio/4@2x.webp 2x, img/portfolio/4@3x.webp 3x, img/portfolio/4@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/4.webp 1x, assets/images/portfolio/4@2x.webp 2x, assets/images/portfolio/4@3x.webp 3x, assets/images/portfolio/4@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/4.png"
-							srcset="img/portfolio/4@2x.png 2x, img/portfolio/4@3x.png 3x, img/portfolio/4@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/4.png"
+							data-srcset="assets/images/portfolio/4@2x.png 2x, assets/images/portfolio/4@3x.png 3x, assets/images/portfolio/4@4x.png 4x"
+							width="300" height="350" alt="img">
 					</picture>
+		
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -432,16 +445,17 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_thin">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/5.webp 1x, img/portfolio/5@2x.webp 2x, img/portfolio/5@3x.webp 3x, img/portfolio/5@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/5.webp 1x, assets/images/portfolio/5@2x.webp 2x, assets/images/portfolio/5@3x.webp 3x, assets/images/portfolio/5@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/5.png"
-							srcset="img/portfolio/5@2x.png 2x, img/portfolio/5@3x.png 3x, img/portfolio/5@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/5.png"
+							data-srcset="assets/images/portfolio/5@2x.png 2x, assets/images/portfolio/5@3x.png 3x, assets/images/portfolio/5@4x.png 4x"
+							width="300" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -451,16 +465,17 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_wide">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/6.webp 1x, img/portfolio/6@2x.webp 2x, img/portfolio/6@3x.webp 3x, img/portfolio/6@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/6.webp 1x, assets/images/portfolio/6@2x.webp 2x, assets/images/portfolio/6@3x.webp 3x, assets/images/portfolio/6@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/6.png"
-							srcset="img/portfolio/6@2x.png 2x, img/portfolio/6@3x.png 3x, img/portfolio/6@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/6.png"
+							data-srcset="assets/images/portfolio/6@2x.png 2x, assets/images/portfolio/6@3x.png 3x, assets/images/portfolio/6@4x.png 4x"
+							width="400" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -470,16 +485,17 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_thin">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/7.webp 1x, img/portfolio/7@2x.webp 2x, img/portfolio/7@3x.webp 3x, img/portfolio/7@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/7.webp 1x, assets/images/portfolio/7@2x.webp 2x, assets/images/portfolio/7@3x.webp 3x, assets/images/portfolio/7@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/7.png"
-							srcset="img/portfolio/7@2x.png 2x, img/portfolio/7@3x.png 3x, img/portfolio/7@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/7.png"
+							data-srcset="assets/images/portfolio/7@2x.png 2x, assets/images/portfolio/7@3x.png 3x, assets/images/portfolio/7@4x.png 4x"
+							width="300" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -489,16 +505,17 @@
 				</li>
 				<li class="portfolio-content__item portfolio-item portfolio-item_wide">
 					<picture class="portfolio-item__img">
-						<source
-							srcset="img/portfolio/8.webp 1x, img/portfolio/8@2x.webp 2x, img/portfolio/8@3x.webp 3x, img/portfolio/8@4x.webp 4x"
+						<source class="lazyload"
+							data-srcset="assets/images/portfolio/8.webp 1x, assets/images/portfolio/8@2x.webp 2x, assets/images/portfolio/8@3x.webp 3x, assets/images/portfolio/8@4x.webp 4x"
 							type="image/webp">
-						<img src="img/portfolio/8.png"
-							srcset="img/portfolio/8@2x.png 2x, img/portfolio/8@3x.png 3x, img/portfolio/8@4x.png 4x" alt="img">
+						<img data-src="assets/images/portfolio/8.png"
+							data-srcset="assets/images/portfolio/8@2x.png 2x, assets/images/portfolio/8@3x.png 3x, assets/images/portfolio/8@4x.png 4x"
+							width="400" height="350" alt="img">
 					</picture>
 					<div class="portfolio-item__cover">
 						<div class="portfolio-item__cover-content">
 							<svg class="portfolio-item__icon">
-								<use xlink:href="img/icons/sprite.svg#plus"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#plus"></use>
 							</svg>
 							<div class="portfolio-item__name">
 								design name
@@ -529,10 +546,10 @@
 					<li class="features-menu__item features-menu__item_left">
 						<div class="features-menu___hexagon hexagon hexagon_features hexagon_left">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_features">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_mark">
-								<use xlink:href="img/icons/sprite.svg#check"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#check"></use>
 							</svg>
 						</div>
 						<span class="features-menu__text features-menu__text_left">
@@ -542,10 +559,10 @@
 					<li class="features-menu__item features-menu__item_left">
 						<div class="features-menu___hexagon hexagon hexagon_features hexagon_left">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_features">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_mark">
-								<use xlink:href="img/icons/sprite.svg#check"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#check"></use>
 							</svg>
 						</div>
 						<span class="features-menu__text features-menu__text_left">
@@ -555,10 +572,10 @@
 					<li class="features-menu__item features-menu__item_left">
 						<div class="features-menu___hexagon hexagon hexagon_features hexagon_left">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_features">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_mark">
-								<use xlink:href="img/icons/sprite.svg#check"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#check"></use>
 							</svg>
 						</div>
 						<span class="features-menu__text features-menu__text_left">
@@ -568,10 +585,10 @@
 					<li class="features-menu__item features-menu__item_right">
 						<div class="features-menu___hexagon hexagon hexagon_features hexagon_right">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_features">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_mark">
-								<use xlink:href="img/icons/sprite.svg#check"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#check"></use>
 							</svg>
 						</div>
 						<span class="features-menu__text features-menu__text_right">
@@ -581,10 +598,10 @@
 					<li class="features-menu__item features-menu__item_right">
 						<div class="features-menu___hexagon hexagon hexagon_features hexagon_right">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_features">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_mark">
-								<use xlink:href="img/icons/sprite.svg#check"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#check"></use>
 							</svg>
 						</div>
 						<span class="features-menu__text features-menu__text_right">
@@ -594,10 +611,10 @@
 					<li class="features-menu__item features-menu__item_right">
 						<div class="features-menu___hexagon hexagon hexagon_features hexagon_right">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_features">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_mark">
-								<use xlink:href="img/icons/sprite.svg#check"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#check"></use>
 							</svg>
 						</div>
 						<span class="features-menu__text features-menu__text_right">
@@ -606,6 +623,14 @@
 					</li>
 				</ul>
 				<div class="features-content__center">
+					<picture class="features-content__img">
+						<source class="lazyload"
+							data-srcset="assets/images/features/1.webp 1x, assets/images/features/1@2x.webp 2x, assets/images/features/1@3x.webp 3x, assets/images/features/1@4x.webp 4x"
+							type="image/webp">
+						<img data-src="assets/images/features/1.png"
+							data-srcset="assets/images/features/1@2x.png 2x, assets/images/features/1@3x.png 3x, assets/images/features/1@4x.png 4x"
+							width="473" height="590" alt="img">
+					</picture>
 					<button name="button" class="features-content__button">Free PSD</button>
 				</div>
 			</div>
@@ -640,12 +665,12 @@
 								</p>
 								<div class="clients-slide__photo-wrapper">
 									<picture class="clients-slide__photo">
-										<source
-											srcset="img/clients/client.webp 1x, img/clients/client@2x.webp 2x, img/clients/client@3x.webp 3x, img/clients/client@4x.webp 4x"
+										<source class="lazyload"
+											data-srcset="assets/images/clients/client.webp 1x, assets/images/clients/client@2x.webp 2x, assets/images/clients/client@3x.webp 3x, assets/images/clients/client@4x.webp 4x"
 											type="image/webp">
-										<img src="img/clients/client.png"
-											srcset="img/clients/client@2x.png 2x, img/clients/client@3x.png 3x, img/clients/client@4x.png 4x"
-											alt="img">
+										<img data-src="assets/images/clients/client.png"
+											data-srcset="assets/images/clients/client@2x.png 2x, assets/images/clients/client@3x.png 3x, assets/images/clients/client@4x.png 4x"
+											width="66" height="57" alt="img">
 									</picture>
 								</div>
 								<div class="clients-slide__name">
@@ -662,12 +687,12 @@
 								</p>
 								<div class="clients-slide__photo-wrapper">
 									<picture class="clients-slide__photo">
-										<source
-											srcset="img/clients/client.webp 1x, img/clients/client@2x.webp 2x, img/clients/client@3x.webp 3x, img/clients/client@4x.webp 4x"
+										<source class="lazyload"
+											data-srcset="assets/images/clients/client.webp 1x, assets/images/clients/client@2x.webp 2x, assets/images/clients/client@3x.webp 3x, assets/images/clients/client@4x.webp 4x"
 											type="image/webp">
-										<img src="img/clients/client.png"
-											srcset="img/clients/client@2x.png 2x, img/clients/client@3x.png 3x, img/clients/client@4x.png 4x"
-											alt="img">
+										<img data-src="assets/images/clients/client.png"
+											data-srcset="assets/images/clients/client@2x.png 2x, assets/images/clients/client@3x.png 3x, assets/images/clients/client@4x.png 4x"
+											width="66" height="57" alt="img">
 									</picture>
 								</div>
 								<div class="clients-slide__name">
@@ -684,12 +709,12 @@
 								</p>
 								<div class="clients-slide__photo-wrapper">
 									<picture class="clients-slide__photo">
-										<source
-											srcset="img/clients/client.webp 1x, img/clients/client@2x.webp 2x, img/clients/client@3x.webp 3x, img/clients/client@4x.webp 4x"
+										<source class="lazyload"
+											data-srcset="assets/images/clients/client.webp 1x, assets/images/clients/client@2x.webp 2x, assets/images/clients/client@3x.webp 3x, assets/images/clients/client@4x.webp 4x"
 											type="image/webp">
-										<img src="img/clients/client.png"
-											srcset="img/clients/client@2x.png 2x, img/clients/client@3x.png 3x, img/clients/client@4x.png 4x"
-											alt="img">
+										<img data-src="assets/images/clients/client.png"
+											data-srcset="assets/images/clients/client@2x.png 2x, assets/images/clients/client@3x.png 3x, assets/images/clients/client@4x.png 4x"
+											width="66" height="57" alt="img">
 									</picture>
 								</div>
 								<div class="clients-slide__name">
@@ -702,12 +727,12 @@
 						<ul class="clients-section__carts">
 							<li class="clients-section__cart">
 								<picture class="clients-section__cart-img clients-section__cart-img_1">
-									<source
-										srcset="img/clients/icon1.webp 1x, img/clients/icon1@2x.webp 2x, img/clients/icon1@3x.webp 3x, img/clients/icon1@4x.webp 4x"
+									<source class="lazyload"
+										data-srcset="assets/images/clients/icon1.webp 1x, assets/images/clients/icon1@2x.webp 2x, assets/images/clients/icon1@3x.webp 3x, assets/images/clients/icon1@4x.webp 4x"
 										type="image/webp">
-									<img src="img/clients/icon1.png"
-										srcset="img/clients/icon1@2x.png 2x, img/clients/icon1@3x.png 3x, img/clients/icon1@4x.png 4x"
-										alt="img">
+									<img data-src="assets/images/clients/icon1.png"
+										data-srcset="assets/images/clients/icon1@2x.png 2x, assets/images/clients/icon1@3x.png 3x, assets/images/clients/icon1@4x.png 4x"
+										width="38" height="43" alt="img">
 								</picture>
 								<span class="clients-section__cart-title">
 									graphicriver
@@ -715,12 +740,12 @@
 							</li>
 							<li class="clients-section__cart">
 								<picture class="clients-section__cart-img clients-section__cart-img_1">
-									<source
-										srcset="img/clients/icon2.webp 1x, img/clients/icon2@2x.webp 2x, img/clients/icon2@3x.webp 3x, img/clients/icon2@4x.webp 4x"
+									<source class="lazyload"
+										data-srcset="assets/images/clients/icon2.webp 1x, assets/images/clients/icon2@2x.webp 2x, assets/images/clients/icon2@3x.webp 3x, assets/images/clients/icon2@4x.webp 4x"
 										type="image/webp">
-									<img src="img/clients/icon2.png"
-										srcset="img/clients/icon2@2x.png 2x, img/clients/icon2@3x.png 3x, img/clients/icon2@4x.png 4x"
-										alt="img">
+									<img data-src="assets/images/clients/icon2.png"
+										data-srcset="assets/images/clients/icon2@2x.png 2x, assets/images/clients/icon2@3x.png 3x, assets/images/clients/icon2@4x.png 4x"
+										width="31" height="32" alt="img">
 								</picture>
 								<span class="clients-section__cart-title">
 									videohive
@@ -728,12 +753,12 @@
 							</li>
 							<li class="clients-section__cart">
 								<picture class="clients-section__cart-img clients-section__cart-img_1">
-									<source
-										srcset="img/clients/icon3.webp 1x, img/clients/icon3@2x.webp 2x, img/clients/icon3@3x.webp 3x, img/clients/icon3@4x.webp 4x"
+									<source class="lazyload"
+										data-srcset="assets/images/clients/icon3.webp 1x, assets/images/clients/icon3@2x.webp 2x, assets/images/clients/icon3@3x.webp 3x, assets/images/clients/icon3@4x.webp 4x"
 										type="image/webp">
-									<img src="img/clients/icon3.png"
-										srcset="img/clients/icon3@2x.png 2x, img/clients/icon3@3x.png 3x, img/clients/icon3@4x.png 4x"
-										alt="img">
+									<img data-src="assets/images/clients/icon3.png"
+										data-srcset="assets/images/clients/icon3@2x.png 2x, assets/images/clients/icon3@3x.png 3x, assets/images/clients/icon3@4x.png 4x"
+										width="32" height="34" alt="img">
 								</picture>
 								<span class="clients-section__cart-title">
 									photodune
@@ -741,12 +766,12 @@
 							</li>
 							<li class="clients-section__cart">
 								<picture class="clients-section__cart-img clients-section__cart-img_1">
-									<source
-										srcset="img/clients/icon4.webp 1x, img/clients/icon4@2x.webp 2x, img/clients/icon4@3x.webp 3x, img/clients/4con1@4x.webp 4x"
+									<source class="lazyload"
+										data-srcset="assets/images/clients/icon4.webp 1x, assets/images/clients/icon4@2x.webp 2x, assets/images/clients/icon4@3x.webp 3x, assets/images/clients/icon4@4x.webp 4x"
 										type="image/webp">
-									<img src="img/clients/icon4.png"
-										srcset="img/clients/icon4@2x.png 2x, img/clients/icon4@3x.png 3x, img/clients/icon4@4x.png 4x"
-										alt="img">
+									<img data-src="assets/images/clients/icon4.png"
+										data-srcset="assets/images/clients/icon4@2x.png 2x, assets/images/clients/icon4@3x.png 3x, assets/images/clients/icon4@4x.png 4x"
+										width="32" height="28" alt="img">
 								</picture>
 								<span class="clients-section__cart-title">
 									codecanyon
@@ -773,25 +798,28 @@
 					Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
 				</p>
 			</div>
-
+		
 			<ul class="team-section__team-list team-list">
 				<li class="team-list__item">
 					<div class="team-list__img-wrapper">
 						<picture class="team-list__img">
-							<source srcset="img/teamwork/1.webp 1x" type="image/webp">
-							<img src="img/teamwork/1.png"
-								srcset="img/teamwork/1@2x.png 2x, img/teamwork/1@3x.png 3x, img/teamwork/1@4x.png 4x" alt="img">
+							<source class="lazyload"
+								data-srcset="assets/images/teamwork/1.webp 1x, assets/images/teamwork/1@2x.webp 2x, assets/images/teamwork/1@3x.webp 3x, assets/images/teamwork/1@4x.webp 4x"
+								type="image/webp">
+							<img data-src="assets/images/teamwork/1.png"
+								data-srcset="assets/images/teamwork/1@2x.png 2x, assets/images/teamwork/1@3x.png 3x, assets/images/teamwork/1@4x.png 4x"
+								width="270" height="240" alt="img">
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-facebook">
-											<use xlink:href="img/icons/sprite.svg#facebook"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#facebook"></use>
 										</svg>
 									</div>
 								</a>
@@ -800,11 +828,11 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-twitter">
-											<use xlink:href="img/icons/sprite.svg#twitter"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 										</svg>
 									</div>
 								</a>
@@ -813,11 +841,10 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
-										<svg
-											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
-											<use xlink:href="img/icons/sprite.svg#g+"></use>
+										<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
+											<use xlink:href="assets/images/icons/sprite.svg#g+"></use>
 										</svg>
 									</div>
 								</a>
@@ -834,22 +861,23 @@
 				<li class="team-list__item">
 					<div class="team-list__img-wrapper">
 						<picture class="team-list__img">
-							<source
-								srcset="img/teamwork/2.webp 1x, img/teamwork/2@2x.webp 2x, img/teamwork/2@3x.webp 3x, img/teamwork/2@4x.webp 4x"
+							<source class="lazyload"
+								data-srcset="assets/images/teamwork/2.webp 1x, assets/images/teamwork/2@2x.webp 2x, assets/images/teamwork/2@3x.webp 3x, assets/images/teamwork/2@4x.webp 4x"
 								type="image/webp">
-							<img src="img/teamwork/2.png"
-								srcset="img/teamwork/2@2x.png 2x, img/teamwork/2@3x.png 3x, img/teamwork/2@4x.png 4x" alt="img">
+							<img data-src="assets/images/teamwork/2.png"
+								data-srcset="assets/images/teamwork/2@2x.png 2x, assets/images/teamwork/2@3x.png 3x, assets/images/teamwork/2@4x.png 4x"
+								width="270" height="240" alt="img">
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-facebook">
-											<use xlink:href="img/icons/sprite.svg#facebook"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#facebook"></use>
 										</svg>
 									</div>
 								</a>
@@ -858,11 +886,11 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-twitter">
-											<use xlink:href="img/icons/sprite.svg#twitter"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 										</svg>
 									</div>
 								</a>
@@ -871,11 +899,10 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
-										<svg
-											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
-											<use xlink:href="img/icons/sprite.svg#g+"></use>
+										<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
+											<use xlink:href="assets/images/icons/sprite.svg#g+"></use>
 										</svg>
 									</div>
 								</a>
@@ -892,22 +919,23 @@
 				<li class="team-list__item">
 					<div class="team-list__img-wrapper">
 						<picture class="team-list__img">
-							<source
-								srcset="img/teamwork/3.webp 1x, img/teamwork/3@2x.webp 2x, img/teamwork/3@3x.webp 3x, img/teamwork/3@4x.webp 4x"
+							<source class="lazyload"
+								data-srcset="assets/images/teamwork/3.webp 1x, assets/images/teamwork/3@2x.webp 2x, assets/images/teamwork/3@3x.webp 3x, assets/images/teamwork/3@4x.webp 4x"
 								type="image/webp">
-							<img src="img/teamwork/3.png"
-								srcset="img/teamwork/3@2x.png 2x, img/teamwork/3@3x.png 3x, img/teamwork/3@4x.png 4x" alt="img">
+							<img data-src="assets/images/teamwork/3.png"
+								data-srcset="assets/images/teamwork/3@2x.png 2x, assets/images/teamwork/3@3x.png 3x, assets/images/teamwork/3@4x.png 4x"
+								width="270" height="240" alt="img">
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-facebook">
-											<use xlink:href="img/icons/sprite.svg#facebook"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#facebook"></use>
 										</svg>
 									</div>
 								</a>
@@ -916,11 +944,11 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-twitter">
-											<use xlink:href="img/icons/sprite.svg#twitter"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 										</svg>
 									</div>
 								</a>
@@ -929,11 +957,10 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
-										<svg
-											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
-											<use xlink:href="img/icons/sprite.svg#g+"></use>
+										<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
+											<use xlink:href="assets/images/icons/sprite.svg#g+"></use>
 										</svg>
 									</div>
 								</a>
@@ -950,22 +977,23 @@
 				<li class="team-list__item">
 					<div class="team-list__img-wrapper">
 						<picture class="team-list__img">
-							<source
-								srcset="img/teamwork/4.webp 1x, img/teamwork/4@2x.webp 2x, img/teamwork/4@3x.webp 3x, img/teamwork/4@4x.webp 4x"
+							<source class="lazyload"
+								data-srcset="assets/images/teamwork/4.webp 1x, assets/images/teamwork/4@2x.webp 2x, assets/images/teamwork/4@3x.webp 3x, assets/images/teamwork/4@4x.webp 4x"
 								type="image/webp">
-							<img src="img/teamwork/4.png"
-								srcset="img/teamwork4@2x.png 2x, img/teamwork/4@3x.png 3x, img/teamwork/4@4x.png 4x" alt="img">
+							<img data-src="assets/images/teamwork/4.png"
+								data-srcset="assets/images/teamwork/4@2x.png 2x, assets/images/teamwork/4@3x.png 3x, assets/images/teamwork/4@4x.png 4x"
+								width="270" height="240" alt="img">
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-facebook">
-											<use xlink:href="img/icons/sprite.svg#facebook"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#facebook"></use>
 										</svg>
 									</div>
 								</a>
@@ -974,11 +1002,11 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
 										<svg
 											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-twitter">
-											<use xlink:href="img/icons/sprite.svg#twitter"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 										</svg>
 									</div>
 								</a>
@@ -987,11 +1015,10 @@
 								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
-											<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 										</svg>
-										<svg
-											class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
-											<use xlink:href="img/icons/sprite.svg#g+"></use>
+										<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_team-g">
+											<use xlink:href="assets/images/icons/sprite.svg#g+"></use>
 										</svg>
 									</div>
 								</a>
@@ -1006,7 +1033,7 @@
 					</div>
 				</li>
 			</ul>
-
+		
 		</section>
 		<section class="skills-section container">
 			<div class="skills-section__title section-title section-title_skills">
@@ -1104,11 +1131,10 @@
 					<div class="service__top">
 						<div class="service__hexagon hexagon hexagon_services">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_services">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-lessmore">
-								<use xlink:href="img/icons/sprite.svg#lessmore"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-lessmore">
+								<use xlink:href="assets/images/icons/sprite.svg#lessmore"></use>
 							</svg>
 						</div>
 						<span class="service__title">
@@ -1124,11 +1150,10 @@
 					<div class="service__top">
 						<div class="service__hexagon hexagon hexagon_services">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_services">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-html5">
-								<use xlink:href="img/icons/sprite.svg#html5"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-html5">
+								<use xlink:href="assets/images/icons/sprite.svg#html5"></use>
 							</svg>
 						</div>
 						<span class="service__title">
@@ -1144,11 +1169,11 @@
 					<div class="service__top">
 						<div class="service__hexagon hexagon hexagon_services">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_services">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
 							<svg
 								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-wordpress">
-								<use xlink:href="img/icons/sprite.svg#wordpress"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#wordpress"></use>
 							</svg>
 						</div>
 						<span class="service__title">
@@ -1164,11 +1189,10 @@
 					<div class="service__top">
 						<div class="service__hexagon hexagon hexagon_services">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_services">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-tablet">
-								<use xlink:href="img/icons/sprite.svg#tablet"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-tablet">
+								<use xlink:href="assets/images/icons/sprite.svg#tablet"></use>
 							</svg>
 						</div>
 						<span class="service__title">
@@ -1184,11 +1208,10 @@
 					<div class="service__top">
 						<div class="service__hexagon hexagon hexagon_services">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_services">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-pen">
-								<use xlink:href="img/icons/sprite.svg#pen"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-pen">
+								<use xlink:href="assets/images/icons/sprite.svg#pen"></use>
 							</svg>
 						</div>
 						<span class="service__title">
@@ -1204,11 +1227,10 @@
 					<div class="service__top">
 						<div class="service__hexagon hexagon hexagon_services">
 							<svg class="hexagon__icon hexagon__icon_big hexagon__icon_services">
-								<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+								<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 							</svg>
-							<svg
-								class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-laptop">
-								<use xlink:href="img/icons/sprite.svg#laptop"></use>
+							<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-black hexagon__icon_services-laptop">
+								<use xlink:href="assets/images/icons/sprite.svg#laptop"></use>
 							</svg>
 						</div>
 						<span class="service__title">
@@ -1389,7 +1411,7 @@
 			<h2 hidden>title</h2>
 			<a href="#" class="twitter-section__link" rel="nofollow noopener noreferrer" title="twitter">
 				<svg class="twitter-section__svg">
-					<use xlink:href="img/icons/sprite.svg#twitter"></use>
+					<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 				</svg>
 			</a>
 			<p class="twitter-section__description">
@@ -1397,7 +1419,7 @@
 				urna. Dapibus egestas turpis.
 			</p>
 			<svg class="twitter-section__bg">
-				<use xlink:href="img/icons/sprite.svg#twitter"></use>
+				<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 			</svg>
 		</section>
 		<section class="blog-section container">
@@ -1421,11 +1443,12 @@
 					<li class="blog__item">
 						<article class="blog__article blog-article">
 							<picture class="blog-article__img">
-								<source
-									srcset="img/blog/1.webp 1x, img/blog/1@2x.webp 2x, img/blog/1@3x.webp 3x, img/blog/1@4x.webp 4x"
+								<source class="lazyload"
+									data-srcset="assets/images/blog/1.webp 1x, assets/images/blog/1@2x.webp 2x, assets/images/blog/1@3x.webp 3x, assets/images/blog/1@4x.webp 4x"
 									type="image/webp">
-								<img src="img/blog/1.png"
-									srcset="img/blog/1@2x.png 2x, img/blog/1@3x.png 3x, img/blog/1@4x.png 4x" alt="img">
+								<img data-src="assets/images/blog/1.png"
+									data-srcset="assets/images/blog/1@2x.png 2x, assets/images/blog/1@3x.png 3x, assets/images/blog/1@4x.png 4x"
+									width="370" height="200" alt="img">
 							</picture>
 							<header class="blog-article__header">
 								<h3 class="blog-article__title">
@@ -1434,19 +1457,19 @@
 								<ul class="blog-article__info">
 									<li class="blog-article__info-item">
 										<svg class="blog-article__info-icon blog-article__info-icon_user">
-											<use xlink:href="img/icons/sprite.svg#user"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#user"></use>
 										</svg>
 										admin
 									</li>
 									<li class="blog-article__info-item">
 										<svg class="blog-article__info-icon blog-article__info-icon_speech">
-											<use xlink:href="img/icons/sprite.svg#speech"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#speech"></use>
 										</svg>
 										1205
 									</li>
 									<li class="blog-article__info-item">
 										<svg class="blog-article__info-icon blog-article__info-icon_view">
-											<use xlink:href="img/icons/sprite.svg#view"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#view"></use>
 										</svg>
 										1205
 									</li>
@@ -1467,11 +1490,12 @@
 					<li class="blog__item">
 						<article class="blog__article blog-article">
 							<picture class="blog-article__img">
-								<source
-									srcset="img/blog/2.webp 1x, img/blog/2@2x.webp 2x, img/blog/2@3x.webp 3x, img/blog/2@4x.webp 4x"
+								<source class="lazyload"
+									data-srcset="assets/images/blog/2.webp 1x, assets/images/blog/2@2x.webp 2x, assets/images/blog/2@3x.webp 3x, assets/images/blog/2@4x.webp 4x"
 									type="image/webp">
-								<img src="img/blog/2.png"
-									srcset="img/blog/2@2x.png 2x, img/blog/2@3x.png 3x, img/blog/2@4x.png 4x" alt="img">
+								<img data-src="assets/images/blog/2.png"
+									data-srcset="assets/images/blog/2@2x.png 2x, assets/images/blog/2@3x.png 3x, assets/images/blog/2@4x.png 4x"
+									width="370" height="200" alt="img">
 							</picture>
 							<header class="blog-article__header">
 								<h3 class="blog-article__title">
@@ -1480,19 +1504,19 @@
 								<ul class="blog-article__info">
 									<li class="blog-article__info-item">
 										<svg class="blog-article__info-icon blog-article__info-icon_user">
-											<use xlink:href="img/icons/sprite.svg#user"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#user"></use>
 										</svg>
 										admin
 									</li>
 									<li class="blog-article__info-item">
 										<svg class="blog-article__info-icon blog-article__info-icon_speech">
-											<use xlink:href="img/icons/sprite.svg#speech"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#speech"></use>
 										</svg>
 										1205
 									</li>
 									<li class="blog-article__info-item">
 										<svg class="blog-article__info-icon blog-article__info-icon_view">
-											<use xlink:href="img/icons/sprite.svg#view"></use>
+											<use xlink:href="assets/images/icons/sprite.svg#view"></use>
 										</svg>
 										1205
 									</li>
@@ -1511,14 +1535,22 @@
 						</article>
 					</li>
 				</ul>
-				<a href="#" class="blog__more">
+				<a href="#" class="blog__more" title="more">
 					<svg class="blog__more-icon">
-						<use xlink:href="img/icons/sprite.svg#down"></use>
+						<use xlink:href="assets/images/icons/sprite.svg#down"></use>
 					</svg>
 				</a>
 			</div>
 		</section>
 		<section class="follow-section bottom-decoration bottom-decoration_red">
+			<picture class="follow-section__bg">
+				<source class="lazyload"
+					data-srcset="assets/images/follow/bg.webp 1x, assets/images/follow/bg@2x.webp 2x, assets/images/follow/bg@3x.webp 3x, assets/images/follow/bg@4x.webp 4x"
+					type="image/webp">
+				<img data-src="assets/images/follow/bg.png"
+					data-srcset="assets/images/follow/bg@2x.png 2x, assets/images/follow/bg@3x.png 3x, assets/images/follow/bg@4x.png 4x"
+					width="1400" height="383" alt="img">
+			</picture>
 			<div class="follow-section__body">
 				<div class="follow-section__title section-title section-title_follow">
 					<h2 class="section-title__title section-title__title_follow">
@@ -1533,11 +1565,10 @@
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="facebook">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
-									<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 								</svg>
-								<svg
-									class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-facebook">
-									<use xlink:href="img/icons/sprite.svg#facebook"></use>
+								<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-facebook">
+									<use xlink:href="assets/images/icons/sprite.svg#facebook"></use>
 								</svg>
 							</div>
 							20000
@@ -1547,11 +1578,10 @@
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="twitter">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
-									<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 								</svg>
-								<svg
-									class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-twitter">
-									<use xlink:href="img/icons/sprite.svg#twitter"></use>
+								<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-twitter">
+									<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 								</svg>
 							</div>
 							99900
@@ -1561,11 +1591,10 @@
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="pinterest">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
-									<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 								</svg>
-								<svg
-									class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-pinterest">
-									<use xlink:href="img/icons/sprite.svg#pinterest"></use>
+								<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-pinterest">
+									<use xlink:href="assets/images/icons/sprite.svg#pinterest"></use>
 								</svg>
 							</div>
 							5000
@@ -1575,10 +1604,10 @@
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="g+">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
-									<use xlink:href="img/icons/sprite.svg#hexagon"></use>
+									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
 								</svg>
 								<svg class="hexagon__icon hexagon__icon_small hexagon__icon_small-red hexagon__icon_follow-g">
-									<use xlink:href="img/icons/sprite.svg#g+"></use>
+									<use xlink:href="assets/images/icons/sprite.svg#g+"></use>
 								</svg>
 							</div>
 							200
@@ -1610,26 +1639,39 @@
 						<div class="form-map__title">
 							send message
 						</div>
-						<input type="text" name="name" class="form-map__input form-map__input_name" placeholder="Name">
-						<input type="email" name="email" class="form-map__input form-map__input_email" placeholder="Email">
-						<input type="text" name="subject" class="form-map__input form-map__input_subject"
-							placeholder="Subject">
-						<textarea name="textarea" class="form-map__input form-map__input_textarea"></textarea>
+						<label for="form-map-name" class="form-map__label form-map__label_name">
+							name
+							<input id="form-map-name" type="text" name="name" class="form-map__input" placeholder="Name">
+						</label>
+						<label for="form-map-email" class="form-map__label form-map__label_email">
+							email
+							<input id="form-map-email" type="email" name="email" class="form-map__input" placeholder="Email">
+						</label>
+						<label for="form-map-subject" class="form-map__label form-map__label_subject">
+							subject
+							<input id="form-map-subject" type="text" name="subject" class="form-map__input" placeholder="Subject">
+						</label>
+						<label for="form-map-textarea" class="form-map__label form-map__label_textarea">
+							textarea
+							<textarea id="form-map-textarea" name="textarea"
+								class="form-map__input form-map__input_textarea"></textarea>
+						</label>
 						<button type="submit" name="button" class="form-map__button">submit</button>
 					</form>
 				</div>
 			</div>
 		</section>
 	</main>
+
 	<footer class="footer">
 		<div class="footer__logo logo logo_footer">
 			<a href="#" class="logo__link logo__link_footer">
 				<picture class="logo__img logo__img_footer">
 					<source
-						srcset="img/header/Creativia.webp 1x, img/header/Creativia@2x.webp 2x, img/header/Creativia@3x.webp 3x, img/header/Creativia@4x.webp 4x"
+						srcset="assets/images/header/Creativia.webp 1x, assets/images/header/Creativia@2x.webp 2x, assets/images/header/Creativia@3x.webp 3x, assets/images/header/Creativia@4x.webp 4x"
 						type="image/webp">
-					<img src="img/header/Creativia.png"
-						srcset="img/header/Creativia@2x.png 2x, img/header/Creativia@3x.png 3x, img/header/Creativia@4x.png 4x"
+					<img src="assets/images/header/Creativia.png"
+						srcset="assets/images/header/Creativia@2x.png 2x, assets/images/header/Creativia@3x.png 3x, assets/images/header/Creativia@4x.png 4x"
 						alt="img">
 				</picture>
 			</a>
@@ -1638,11 +1680,7 @@
 			Design by Amr Srour
 		</small>
 	</footer>
-	<!-- <a class="a">111</a>
-	<a href="" class="a">222</a> -->
-
-
+	<script defer src="assets/js/app.js"></script>
 </body>
-
 
 </html>
