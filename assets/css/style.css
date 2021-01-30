@@ -917,6 +917,33 @@ html {
     content: '\2013';
 }
 
+@-moz-document url-prefix(http://),url-prefix(https://) {
+    scrollbar {
+        -moz-appearance: none !important;
+        background: lime !important;
+    }
+
+    thumb,
+  scrollbarbutton {
+        -moz-appearance: none !important;
+        background-color: blue !important;
+    }
+
+    thumb:hover,
+  scrollbarbutton:hover {
+        -moz-appearance: none !important;
+        background-color: red !important;
+    }
+
+    scrollbarbutton {
+        display: none !important;
+    }
+
+    scrollbar[orient="vertical"] {
+        min-width: 15px !important;
+    }
+}
+
 .body {
     position: relative;
 }
@@ -1549,7 +1576,7 @@ html {
     content: "";
     display: block;
     width: 0.9473em;
-    height: 0.9473em;
+    height: 1em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1571,11 +1598,11 @@ html {
     opacity: 1;
 }
 
-.accordion__button.open::before {
+.tab-opened .accordion__button::before {
     opacity: 1;
 }
 
-.accordion__button.open::after {
+.tab-opened .accordion__button::after {
     opacity: 0;
 }
 
@@ -1601,10 +1628,16 @@ html {
 }
 
 .accordion__content {
-    padding: 10px 13px 10px 13px;
-    height: 7em;
+    padding: 10px 7px 10px 13px;
+    height: 90px;
     display: none;
     overflow-y: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.accordion__content.animation {
+    opacity: 1;
 }
 
 .accordion__content.open {
@@ -1619,17 +1652,21 @@ html {
     font-size: 1.4em;
     line-height: 1.6em;
     text-align: justify;
+    scrollbar-color: #a4a4a4;
+    scrollbar-width: thin;
+}
+
+.accordion__description.overflow {
     overflow: auto;
 }
 
 .accordion__description::-webkit-scrollbar {
     width: 4px;
-    background-color: #e7e7e7;
 }
 
 .accordion__description::-webkit-scrollbar-thumb {
     background-color: #a4a4a4;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .images {
@@ -2073,7 +2110,7 @@ html {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(14, 1fr);
+    grid-template-columns: 1fr 1fr 1fr minmax(0px, 1fr) 1fr 1fr 1fr 1fr 1fr 1fr minmax(0px, 1fr) 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -2687,6 +2724,7 @@ html {
 
 .team-list__item:hover .team-list__cover {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .team-list__item:hover .team-list__item-name {
@@ -2714,6 +2752,7 @@ html {
     left: 0;
     transition: opacity;
     transition-duration: 0.3s;
+    pointer-events: none;
 }
 
 .team-list__cover-item {
