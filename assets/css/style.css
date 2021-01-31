@@ -831,12 +831,12 @@ html {
     opacity: 0;
 }
 
-.slide .lazyload,
-.slide .lazyloading {
-    opacity: 0;
+.lazyload,
+.lazyloading {
+    opacity: 1;
 }
 
-.slide .lazyloaded {
+.lazyloaded {
     opacity: 1;
     transition: opacity 300ms;
 }
@@ -1269,6 +1269,13 @@ html {
     object-fit: cover;
     -o-object-position: top;
     object-position: top;
+}
+
+.slide__img source.lazyload, .slide__img source.lazyloading,
+      .slide__img img.lazyload,
+      .slide__img img.lazyloading {
+    -o-object-position: center;
+    object-position: center;
 }
 
 .slide__content {
