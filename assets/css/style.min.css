@@ -660,7 +660,7 @@ html {
 
 .lazyload,
 .lazyloading {
-  opacity: 0; }
+  opacity: 1; }
 
 .lazyloaded {
   opacity: 1;
@@ -902,16 +902,16 @@ html {
 .main {
   margin-top: -2px; }
 
-.slider-section {
+.intro-section {
   background-color: #000000;
   position: relative;
   font-size: 10px; }
   @media (max-width: 600px) {
-    .slider-section {
+    .intro-section {
       font-size: 9px; } }
-  .slider-section__slider {
+  .intro-section__slider {
     width: 100%; }
-  .slider-section__button {
+  .intro-section__button {
     display: inline;
     background-color: transparent;
     border: none;
@@ -919,21 +919,21 @@ html {
     top: 50%;
     transform: translateY(-50%); }
     @media (max-width: 1200px) {
-      .slider-section__button {
+      .intro-section__button {
         display: none; } }
-    .slider-section__button_prev {
+    .intro-section__button_prev {
       direction: rtl;
       left: 36px; }
-    .slider-section__button_next {
+    .intro-section__button_next {
       direction: ltr;
       right: 36px; }
-  .slider-section__icon {
+  .intro-section__icon {
     width: 28px;
     height: 28px;
     color: inherit; }
-    .slider-section__icon_prev {
+    .intro-section__icon_prev {
       transform: rotate(90deg); }
-    .slider-section__icon_next {
+    .intro-section__icon_next {
       transform: rotate(-90deg); }
 
 .slide {
