@@ -13,7 +13,13 @@
 	<meta name="google" content="notranslate">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Creativia">
-	<meta name="msapplication-TileColor" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#ff0036">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#262626">
 	<meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<!-- <meta http-equiv="Cache-control" content="public"> -->
@@ -39,63 +45,67 @@
 <body class="body">
 
 	<header class="header container full-width">
-		<div class="header__logo logo">
-			<a href="#" class="logo__link">
-				<picture class="logo__img">
-					<source class="lazyload" data-expand="3000"
-						data-srcset="assets/images/header/Creativia.webp 1x, assets/images/header/Creativia@2x.webp 2x, assets/images/header/Creativia@3x.webp 3x, assets/images/header/Creativia@4x.webp 4x"
-						type="image/webp">
-					<img class="lazyload" data-expand="3000" data-src="assets/images/header/Creativia.png"
-						data-srcset="assets/images/header/Creativia@2x.png 2x, assets/images/header/Creativia@3x.png 3x, assets/images/header/Creativia@4x.png 4x"
-						width="120" height="23" alt="img">
-				</picture>
-			</a>
+		<div class="header__inner">
+			<div class="header__logo logo">
+				<a href="#" class="logo__link">
+					<picture class="logo__img">
+						<source class="lazyload" data-expand="3000"
+							data-srcset="assets/images/header/Creativia.webp 1x, assets/images/header/Creativia@2x.webp 2x, assets/images/header/Creativia@3x.webp 3x, assets/images/header/Creativia@4x.webp 4x"
+							type="image/webp">
+						<img class="lazyload" src="assets/images/placeholders/120x23_131313.gif" data-expand="3000"
+							data-src="assets/images/header/Creativia.png"
+							data-srcset="assets/images/header/Creativia@2x.png 2x, assets/images/header/Creativia@3x.png 3x, assets/images/header/Creativia@4x.png 4x"
+							width="120" height="23" alt="img">
+					</picture>
+				</a>
+			</div>
+			<nav class="header__nav nav" data-da="header, 2, 900">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Home
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							About us
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Portfolio
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Clients
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Team
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Services
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Blog
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__burger burger"><span></span></div>
 		</div>
-		<nav class="header__nav nav">
-			<ul class="nav__list">
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Home
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						About us
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Portfolio
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Clients
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Team
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Services
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Blog
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						Contact
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="header__burger burger"><span></span></div>
+	
 	</header>	<main class="main">
 		<section class="intro-section">
 			<div class="intro-section__slider slider">
@@ -226,16 +236,22 @@
 							data-srcset="assets/images/intro/1400@2x.png 2x, assets/images/intro/1400@3x.png 3x, assets/images/intro/1400@4x.png 4x"
 							width="1400" height="630" alt="img">
 					</picture>
-					<div class="slide__content paddingRL container">
-						<h2 class="slide__title">
-							why <span class="slide__title-accent">creativia ?</span>
-						</h2>
-						<p class="slide__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac
-							nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu
-							tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
-							condimentum vitae,
-						</p>
+					<div class="slide__content padding container">
+		
+		
+						<div class="slide__title title-section slide__title title-section_mb48">
+							<h2 class="title-section__title title-section__title_white">
+								why
+								<span class="title-section__title-accent">
+									creativia ?
+								</span>
+							</h2>
+							<p class="title-section__description title-section__description_white">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac
+								nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu
+								tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
+								condimentum vitae, </p>
+						</div>
 						<div class="slide__buttons">
 							<button class="slide__button slide__button_red" name="button1">features</button>
 							<button class="slide__button slide__button" name="button2">Free PSD</button>
@@ -923,7 +939,8 @@
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -936,7 +953,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -949,7 +967,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -982,7 +1001,8 @@
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -995,7 +1015,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1008,7 +1029,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1041,7 +1063,8 @@
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1054,7 +1077,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1067,7 +1091,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1100,7 +1125,8 @@
 						</picture>
 						<ul class="team-list__cover">
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="facebook">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="facebook">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1113,7 +1139,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="twitter">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="twitter">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1126,7 +1153,8 @@
 								</a>
 							</li>
 							<li class="team-list__cover-item">
-								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" title="g+">
+								<a href="#" class="team-list__cover-link" rel="nofollow noopener noreferrer" target="_blank"
+									title="g+">
 									<div class="team-list__hexagon hexagon hexagon_team">
 										<svg class="hexagon__icon hexagon__icon_big hexagon__icon_team">
 											<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1520,7 +1548,7 @@
 			</ul>
 		</section>		<section class="twitter-section padding bottom-decoration bottom-decoration_red">
 			<h2 hidden>title</h2>
-			<a href="#" class="twitter-section__link" rel="nofollow noopener noreferrer" title="twitter">
+			<a href="#" class="twitter-section__link" rel="nofollow noopener noreferrer" target="_blank" title="twitter">
 				<svg class="twitter-section__svg">
 					<use xlink:href="assets/images/icons/sprite.svg#twitter"></use>
 				</svg>
@@ -1675,7 +1703,7 @@
 				</div>
 				<ul class="follow-section__links follow-links">
 					<li class="follow-links__item follow-item">
-						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="facebook">
+						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="facebook">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
 									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1688,7 +1716,7 @@
 						</a>
 					</li>
 					<li class="follow-links__item follow-item">
-						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="twitter">
+						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="twitter">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
 									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1701,7 +1729,7 @@
 						</a>
 					</li>
 					<li class="follow-links__item follow-item">
-						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="pinterest">
+						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="pinterest">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
 									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1714,7 +1742,7 @@
 						</a>
 					</li>
 					<li class="follow-links__item follow-item">
-						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" title="g+">
+						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="g+">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
 									<use xlink:href="assets/images/icons/sprite.svg#hexagon"></use>
@@ -1782,7 +1810,8 @@
 					<source class="lazyload" data-expand="3000"
 						data-srcset="assets/images/header/Creativia.webp 1x, assets/images/header/Creativia@2x.webp 2x, assets/images/header/Creativia@3x.webp 3x, assets/images/header/Creativia@4x.webp 4x"
 						type="image/webp">
-					<img class="lazyload" data-expand="3000" data-src="assets/images/header/Creativia.png"
+					<img class="lazyload" src="assets/images/placeholders/120x23_262626.gif" data-expand="3000"
+						data-src="assets/images/header/Creativia.png"
 						data-srcset="assets/images/header/Creativia@2x.png 2x, assets/images/header/Creativia@3x.png 3x, assets/images/header/Creativia@4x.png 4x"
 						width="120" height="23" alt="img">
 				</picture>
