@@ -45,7 +45,7 @@
 <body class="body">
 
 	<header class="header container full-width">
-		<div class="header__inner">
+		<div class="header__inner padding padding_right-left">
 			<div class="header__logo logo">
 				<a href="#" class="logo__link">
 					<picture class="logo__img">
@@ -1773,11 +1773,18 @@
 				</p>
 			</div>
 			<div class="map-section__content">
-				<div class="map-section__map"></div>
-				<div class="map-section__form-wrap">
-					<form action="#" method="POST" class="map-section__form form-map">
+				<iframe class="map-section__map"
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4688.196988042761!2d-0.1375880221971947!3d51.5036164653636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2z0JHRg9C60LjQvdCz0LXQvNGB0LrQuNC5INC00LLQvtGA0LXRhg!5e0!3m2!1sru!2spl!4v1612370865292!5m2!1sru!2spl"
+					frameborder="0" aria-hidden="false" tabindex="0" title="map"></iframe>
+				<div class="map-section__form-wrap container padding padding_right-left">
+					<form action="#" method="POST" class="map-section__form form-map animate__animated">
 						<div class="form-map__title">
 							send message
+							<button type="button" class="form-map__close close" title="close">
+								<svg class="close__icon">
+									<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+								</svg>
+							</button>
 						</div>
 						<label for="form-map-name" class="form-map__label form-map__label_name">
 							name
@@ -1798,6 +1805,9 @@
 						</label>
 						<button type="submit" name="button" class="form-map__button">submit</button>
 					</form>
+				</div>
+				<div class="map-section__openner-wrap animate__animated">
+					<button name="open" class="map-section__openner">SEND MESSAGE</button>
 				</div>
 			</div>
 		</section>
