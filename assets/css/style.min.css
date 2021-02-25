@@ -445,6 +445,7 @@ svg {
   height: 100%; }
 
 img {
+  border: 1px solid;
   width: 100%;
   height: auto; }
 
@@ -453,13 +454,24 @@ source {
   height: auto; }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit; }
 
 button {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-family: inherit; }
+
+label {
+  display: block;
+  font-size: 0px; }
+  label input,
+  label textarea {
+    width: 100%;
+    display: block;
+    font-family: inherit; }
 
 @keyframes form {
   from {
@@ -4845,17 +4857,27 @@ html.scrollFixed {
           order: 1; } }
 
 .clients-section {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   font-size: 10px; }
-  .no-webp .clients-section {
-    background-image: url(../images/clients/bg.png); }
-  .webp .clients-section {
-    background-image: url(../images/clients/bg.webp); }
   @media (max-width: 600px) {
     .clients-section {
-      font-size: 9px; } }
+      font-size: 9px;
+      background-color: #060508; } }
+  .clients-section__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+    @media (max-width: 600px) {
+      .clients-section__bg {
+        display: none; } }
+    .clients-section__bg img,
+    .clients-section__bg source {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top; }
   .clients-section__content {
     display: flex;
     justify-content: space-between;

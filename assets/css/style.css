@@ -498,6 +498,7 @@ source {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -509,6 +510,19 @@ button {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    font-family: inherit;
+}
+
+label {
+    display: block;
+    font-size: 0px;
+}
+
+label input,
+  label textarea {
+    width: 100%;
+    display: block;
+    font-family: inherit;
 }
 
 @-webkit-keyframes form {
@@ -5618,16 +5632,22 @@ html.scrollFixed {
     display: inline;
     background-color: transparent;
     border: none;
+    color: #a4a4a4;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    transition: color 0.3s;
 }
 
 @media (max-width: 1200px) {
     .intro-section__button {
         display: none;
     }
+}
+
+.intro-section__button:hover {
+    color: #d7d7d7;
 }
 
 .intro-section__button_prev {
@@ -5743,11 +5763,11 @@ html.scrollFixed {
 }
 
 .slide__button_red {
-    background-color: #ff0036;
+    background-color: #df0030;
 }
 
 .slide__button_red:hover {
-    background-color: #990020;
+    background-color: #79001a;
 }
 
 .about-section {
@@ -5831,7 +5851,7 @@ html.scrollFixed {
 }
 
 .title-section__description-accent {
-    color: #ff0036;
+    color: #df0030;
 }
 
 .logo {
@@ -5913,8 +5933,15 @@ html.scrollFixed {
 @media (max-width: 1100px) {
     .about-content__column_left {
         margin: 0px 0px 0px 0px;
+        padding: 0px 0px 10em 0px;
         -ms-flex: 0 1 80%;
         flex: 0 1 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-content__column_left {
+        padding: 0px 0px 6em 0px;
     }
 }
 
@@ -5933,12 +5960,6 @@ html.scrollFixed {
     text-align: justify;
 }
 
-@media (max-width: 1100px) {
-    .about-content__accordion {
-        padding: 0px 0px 5em 0px;
-    }
-}
-
 @media (max-width: 1210px) {
     .about-content__images {
         margin-top: 10px;
@@ -5948,12 +5969,6 @@ html.scrollFixed {
 @media (max-width: 1100px) {
     .about-content__images {
         margin: 0 auto 4em;
-    }
-}
-
-@media (max-width: 1100px) {
-    .accordion {
-        min-height: 34.7em;
     }
 }
 
@@ -6034,7 +6049,7 @@ html.scrollFixed {
 }
 
 .tab-opened .accordion__title {
-    color: #ff0036;
+    color: #df0030;
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -7037,7 +7052,7 @@ html.scrollFixed {
 
 .clients-slide__text {
     margin: 0px 0px 45px 0px;
-    color: #a4a4a4;
+    color: #f7f7f7;
     font-family: "Lato", sans-serif;
     font-size: 1.6em;
     line-height: 1.375em;
@@ -8006,6 +8021,7 @@ html.scrollFixed {
     right: 0;
     bottom: 0;
     left: 0;
+    pointer-events: none;
 }
 
 @media (max-width: 900px) {
@@ -8014,20 +8030,24 @@ html.scrollFixed {
     }
 }
 
+.map-section__form {
+    pointer-events: all;
+}
+
 .map-section__openner-wrap {
     position: absolute;
     right: 80px;
     bottom: 0;
-    -webkit-transform: translateY(80px);
-    transform: translateY(80px);
     z-index: 1;
+    pointer-events: all;
 }
 
 .map-section__openner {
-    padding: 15px 20px 100px 20px;
+    padding: 15px 20px 15px 20px;
     min-width: 100px;
     border: 1px solid #a4a4a4;
-    border-radius: 10px;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
     color: #ff0036;
     font-family: "Raleway", sans-serif;
     font-size: 1.6em;
@@ -8038,6 +8058,8 @@ html.scrollFixed {
 
 .map-section__openner:active {
     background-color: #c4c4c4;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .form-map {
@@ -8055,6 +8077,12 @@ html.scrollFixed {
 
 .form-map__title {
     margin: 0px 0px 1.5em 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
     color: #262626;
     font-family: "Raleway", sans-serif;
     font-size: 2em;
@@ -8125,6 +8153,23 @@ html.scrollFixed {
 
 .form-map__button:hover {
     background-color: black;
+}
+
+.close {
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    border: none;
+    color: #a4a4a4;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #262626;
+}
+
+.close__icon {
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .footer {
