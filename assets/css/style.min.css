@@ -5483,13 +5483,11 @@ html.scrollFixed {
 
 .follow-section {
   font-size: 10px;
-  position: relative; }
+  position: relative;
+  background-color: #060508; }
   @media (max-width: 700px) {
     .follow-section {
       font-size: 9px; } }
-  @media (max-width: 600px) {
-    .follow-section {
-      background-color: #060508; } }
   .follow-section__bg {
     width: 100%;
     height: 100%;
