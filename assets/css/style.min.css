@@ -5198,52 +5198,54 @@ html.scrollFixed {
   padding: 0px 0px 9em 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-gap: 5.4em 3.3em; }
   @media (max-width: 600px) {
     .service-list {
       grid-template-columns: 90%;
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: repeat(6, auto);
       justify-content: center; } }
   @media (max-width: 500px) {
     .service-list {
       grid-template-columns: 100%; } }
 
-.service:hover .service__text {
-  background-color: #3d2328; }
-
-.service:hover .hexagon__icon_big {
-  color: #ff0036; }
-
-.service:hover .hexagon__icon_small {
-  color: white; }
-
-.service__top {
-  margin: 0px 0px 2.4em 0px;
+.service {
   display: flex;
-  align-items: center; }
-
-.service__hexagon {
-  margin: 0px 3.3em 0px 0px; }
-
-.service__title {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  line-height: 1.3;
-  font-weight: 500;
-  text-transform: uppercase; }
-
-.service__text {
-  padding: 1.625em 1.188em 1.813em 2.25em;
-  background-color: #333333;
-  color: #a4a4a4;
-  font-family: "Lato", sans-serif;
-  font-size: 1.6em;
-  font-weight: 400;
-  line-height: 1.375em;
-  letter-spacing: -0.1px;
-  transition: background-color 0.3s; }
+  flex-flow: column; }
+  .service:hover .service__text {
+    background-color: #3d2328; }
+  .service:hover .hexagon__icon_big {
+    color: #ff0036; }
+  .service:hover .hexagon__icon_small {
+    color: white; }
+  .service__top {
+    margin: 0px 0px 2.4em 0px;
+    display: flex;
+    align-items: center; }
+  .service__hexagon {
+    margin: 0px 3.3em 0px 0px;
+    flex-shrink: 0;
+    align-self: flex-start; }
+  .service__title {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    line-height: 1.3;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .service__text {
+    padding: 1.625em 1.188em 1.813em 2.25em;
+    flex-grow: 1;
+    background-color: #333333;
+    color: #a4a4a4;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.375em;
+    letter-spacing: -0.1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: background-color 0.3s; }
 
 .bestseller-section {
   display: flex;
