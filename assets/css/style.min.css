@@ -4654,11 +4654,7 @@ html.scrollFixed {
   position: relative; }
   .portfolio-item::after {
     content: "";
-    height: 100%;
-    width: 100%;
-    display: block;
-    background: black;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 100%); }
+    display: block; }
   .portfolio-item:hover .portfolio-item__cover {
     opacity: 1; }
   .portfolio-item:hover .portfolio-item__img img,
