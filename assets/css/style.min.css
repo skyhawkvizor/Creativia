@@ -4333,7 +4333,7 @@ html.scrollFixed {
     display: block; }
 
 .accordion__description {
-  padding: 0px 13px 0px 0px;
+  padding: 0px 20px 0px 0px;
   height: 100%;
   color: #505050;
   font-family: "Lato", sans-serif;
@@ -4345,7 +4345,7 @@ html.scrollFixed {
   .accordion__description.overflow {
     overflow: auto; }
   .accordion__description::-webkit-scrollbar {
-    width: 4px; }
+    width: 5px; }
   .accordion__description::-webkit-scrollbar-thumb {
     background-color: #a4a4a4;
     border-radius: 4px; }
@@ -5055,21 +5055,28 @@ html.scrollFixed {
     position: absolute;
     bottom: 0;
     left: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    overflow: auto;
+    scrollbar-color: #a4a4a4;
+    scrollbar-width: thin; }
     @media (max-width: 1366px) {
       .team-item__cover {
         height: auto;
         background-color: rgba(0, 0, 0, 0.6);
         outline: none;
-        opacity: 1; } }
+        opacity: 1;
+        overflow: auto; } }
     .team-item__cover.opacityAnimation {
       transition: opacity 0.3s; }
   .team-item__cover-list {
     margin: -1em;
+    max-width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden; }
+    align-items: center; }
+    @media (min-width: 1367px) {
+      .team-item__cover-list {
+        flex-wrap: wrap; } }
   .team-item__cover-item {
     padding: 0.5em; }
     .team-item__cover-item:last-child {
@@ -5558,34 +5565,36 @@ html.scrollFixed {
         margin: 0px 0px 0px 0px; } }
 
 .follow-links {
-  margin: -2.5em;
+  margin: -2em;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  justify-content: center; }
+  @media (max-width: 600px) {
+    .follow-links {
+      flex-wrap: wrap; } }
   .follow-links__item {
-    flex: 0 1 25%;
-    padding: 2.5em; }
+    padding: 2em;
+    flex: 0 1 25%; }
     @media (max-width: 600px) {
       .follow-links__item {
         flex: 0 1 50%; } }
 
-.follow-item:hover .hexagon__icon_big {
-  color: #ff0036;
-  stroke: none; }
-
-.follow-item:hover .hexagon__icon_small-red {
-  color: white;
-  stroke: none; }
-
-.follow-item__link {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 1.6em;
-  line-height: 1.375em;
-  text-align: center; }
+.follow-item {
+  max-width: 20em; }
+  .follow-item:hover .hexagon__icon_big {
+    color: #ff0036;
+    stroke: none; }
+  .follow-item:hover .hexagon__icon_small-red {
+    color: white;
+    stroke: none; }
+  .follow-item__link {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6em;
+    line-height: 1.375em;
+    text-align: center; }
 
 .map-section {
   font-size: 10px;
