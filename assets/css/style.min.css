@@ -5044,12 +5044,10 @@ html.scrollFixed {
       height: 100%;
       object-fit: cover; }
   .team-item__cover {
-    padding: 1em;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: rgba(38, 38, 38, 0.8);
     opacity: 0;
     position: absolute;
@@ -5062,6 +5060,7 @@ html.scrollFixed {
     @media (max-width: 1366px) {
       .team-item__cover {
         height: auto;
+        align-items: center;
         background-color: rgba(0, 0, 0, 0.6);
         outline: none;
         opacity: 1;
@@ -5069,14 +5068,13 @@ html.scrollFixed {
     .team-item__cover.opacityAnimation {
       transition: opacity 0.3s; }
   .team-item__cover-list {
-    margin: -1em;
     max-width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center; }
     @media (min-width: 1367px) {
       .team-item__cover-list {
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        justify-content: center; } }
   .team-item__cover-item {
     padding: 0.5em; }
     .team-item__cover-item:last-child {
