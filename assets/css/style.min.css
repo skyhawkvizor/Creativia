@@ -455,13 +455,14 @@ source {
 a {
   display: block;
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none; }
 
 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: inherit; }
+  font-family: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none; }
 
 label {
   display: block;
@@ -3895,19 +3896,16 @@ html.scrollFixed {
 
 .header {
   background-color: #000000;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 1000;
   font-size: 10px; }
   .header__inner {
     min-height: 6.7em;
     display: flex;
     justify-content: flex-end; }
-  .scrollFixed .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 10; }
   @media (max-width: 1000px) {
     .header {
       font-size: 9px; } }
@@ -3987,13 +3985,14 @@ html.scrollFixed {
     margin: 0 -1em;
     flex: 0 1 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap; }
     @media (max-width: 900px) {
       .nav__list {
         flex-flow: column;
         align-items: center;
         overflow-y: auto;
+        justify-content: unset;
         scrollbar-width: thin; } }
   .nav__item {
     padding: 1em;
@@ -4027,7 +4026,9 @@ html.scrollFixed {
       bottom: 0; }
     .nav__item:hover {
       color: white; }
-      .nav__item:hover::before, .nav__item:hover::after {
+    .nav__item.active {
+      color: white; }
+      .nav__item.active::before, .nav__item.active::after {
         opacity: 1; }
   .nav__link {
     color: inherit;
@@ -4035,9 +4036,6 @@ html.scrollFixed {
     font-size: 1.7em;
     text-transform: uppercase;
     letter-spacing: 0.05em; }
-
-.main {
-  margin-top: -2px; }
 
 .intro-section {
   background-color: #000000;
@@ -4060,7 +4058,7 @@ html.scrollFixed {
     @media (max-width: 1350px) {
       .intro-section__button {
         display: none; } }
-    .intro-section__button:hover {
+    .intro-section__button.hover, .intro-section__button:active {
       color: #d7d7d7; }
     .intro-section__button_prev {
       direction: rtl;
@@ -4125,11 +4123,11 @@ html.scrollFixed {
     @media (max-width: 400px) {
       .slide__button {
         margin: 0px 0em 1.2em 0em; } }
-    .slide__button:hover {
+    .slide__button.hover, .slide__button:active {
       background-color: black; }
     .slide__button_red {
       background-color: #df0030; }
-      .slide__button_red:hover {
+      .slide__button_red.hover, .slide__button_red:active {
         background-color: #79001a; }
   .slide__button-text {
     padding: 0.75em;
@@ -4447,10 +4445,10 @@ html.scrollFixed {
     font-size: 1.6em;
     line-height: 1.375em;
     text-align: center; }
-  .about-item:hover .hexagon__icon_big {
+  .about-item.hover .hexagon__icon_big, .about-item:active .hexagon__icon_big {
     color: #ff0036;
     stroke: none; }
-  .about-item:hover .hexagon__icon_small {
+  .about-item.hover .hexagon__icon_small, .about-item:active .hexagon__icon_small {
     color: white; }
 
 .hexagon {
@@ -4610,7 +4608,7 @@ html.scrollFixed {
     text-transform: uppercase;
     transition: color;
     transition-duration: 0.3s; }
-    .portfolio-section__menu-link:hover {
+    .portfolio-section__menu-link.hover, .portfolio-section__menu-link:active {
       color: #ff0036; }
 
 .portfolio-content {
@@ -4651,15 +4649,21 @@ html.scrollFixed {
 
 .portfolio-item {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; }
   .portfolio-item::after {
     content: "";
-    display: block; }
+    height: 100%;
+    display: block;
+    box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 10;
+    pointer-events: none; }
   .portfolio-item:hover .portfolio-item__cover {
     opacity: 1; }
-  .portfolio-item:hover .portfolio-item__img img,
-  .portfolio-item:hover .portfolio-item__img source {
-    outline: 1px solid black; }
+  .portfolio-item:hover .portfolio-item__cover-content {
+    pointer-events: auto; }
   .portfolio-item__img {
     width: 100%;
     height: 100%;
@@ -4679,7 +4683,7 @@ html.scrollFixed {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.9);
-    outline: 1px solid black;
+    box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
     position: absolute;
     bottom: 0;
     left: 0px;
@@ -4690,13 +4694,15 @@ html.scrollFixed {
         height: auto;
         min-height: 50px;
         background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: none;
         opacity: 1; } }
     .portfolio-item__cover.opacityAnimation {
       transition: opacity 0.3s; }
   .portfolio-item__cover-content {
     max-height: 100%;
-    overflow: hidden; }
-    .portfolio-item__cover-content:hover .portfolio-item__icon {
+    overflow: hidden;
+    pointer-events: none; }
+    .portfolio-item__cover-content.hover .portfolio-item__icon, .portfolio-item__cover-content:active .portfolio-item__icon {
       color: #ff0036; }
     @media (max-width: 1366px) {
       .portfolio-item__cover-content {
@@ -4800,7 +4806,7 @@ html.scrollFixed {
     text-transform: uppercase;
     overflow: hidden;
     transition: background-color 0.3s; }
-    .features-content__button:hover {
+    .features-content__button.hover, .features-content__button:active {
       background-color: #060606; }
     @media (max-width: 400px) {
       .features-content__button {
@@ -4851,13 +4857,13 @@ html.scrollFixed {
     @media (max-width: 400px) {
       .features-menu__item {
         margin: 0px 0px 2em 0px; } }
-    .features-menu__item:hover {
+    .features-menu__item.hover, .features-menu__item:active {
       background-color: #ff0036; }
-      .features-menu__item:hover .features-menu__text {
+      .features-menu__item.hover .features-menu__text, .features-menu__item:active .features-menu__text {
         color: white; }
-      .features-menu__item:hover .hexagon__icon_big {
+      .features-menu__item.hover .hexagon__icon_big, .features-menu__item:active .hexagon__icon_big {
         color: white; }
-      .features-menu__item:hover .hexagon__icon_mark {
+      .features-menu__item.hover .hexagon__icon_mark, .features-menu__item:active .hexagon__icon_mark {
         color: #ff0036; }
   .features-menu__text {
     display: block;
@@ -5019,7 +5025,7 @@ html.scrollFixed {
   max-width: 270px; }
   .team-item:hover .team-item__cover {
     opacity: 1;
-    pointer-events: auto; }
+    pointer-events: all; }
   @media (min-width: 1367px) {
     .team-item:hover .team-item__name {
       color: #ff0036; } }
@@ -5056,7 +5062,8 @@ html.scrollFixed {
     overflow: hidden;
     overflow: auto;
     scrollbar-color: #a4a4a4;
-    scrollbar-width: thin; }
+    scrollbar-width: thin;
+    pointer-events: none; }
     @media (max-width: 1366px) {
       .team-item__cover {
         height: auto;
@@ -5064,7 +5071,8 @@ html.scrollFixed {
         background-color: rgba(0, 0, 0, 0.6);
         outline: none;
         opacity: 1;
-        overflow: auto; } }
+        overflow: auto;
+        pointer-events: all; } }
     .team-item__cover.opacityAnimation {
       transition: opacity 0.3s; }
   .team-item__cover-list {
@@ -5079,10 +5087,10 @@ html.scrollFixed {
     padding: 0.5em; }
     .team-item__cover-item:last-child {
       margin: 0px 0px 0px 0px; }
-    .team-item__cover-item:hover .hexagon__icon_big {
-      color: #ff0036; }
-    .team-item__cover-item:hover .hexagon__icon_small {
-      color: white; }
+  .team-item__cover-link.hover .hexagon__icon_big, .team-item__cover-link:active .hexagon__icon_big {
+    color: #ff0036; }
+  .team-item__cover-link.hover .hexagon__icon_small, .team-item__cover-link:active .hexagon__icon_small {
+    color: white; }
   .team-item__hexagon {
     transition: color 0.3s; }
     @media (max-width: 1100px) and (min-width: 801px) {
@@ -5214,11 +5222,11 @@ html.scrollFixed {
 .service {
   display: flex;
   flex-flow: column; }
-  .service:hover .service__text {
+  .service.hover .service__text, .service:active .service__text {
     background-color: #3d2328; }
-  .service:hover .hexagon__icon_big {
+  .service.hover .hexagon__icon_big, .service:active .hexagon__icon_big {
     color: #ff0036; }
-  .service:hover .hexagon__icon_small {
+  .service.hover .hexagon__icon_small, .service:active .hexagon__icon_small {
     color: white; }
   .service__top {
     margin: 0px 0px 2.4em 0px;
@@ -5349,7 +5357,7 @@ html.scrollFixed {
     text-transform: uppercase;
     overflow: hidden;
     transition: background-color 0.3s; }
-    .bestseller-card__button:hover {
+    .bestseller-card__button.hover, .bestseller-card__button:active {
       background-color: black; }
 
 .twitter-section {
@@ -5423,9 +5431,9 @@ html.scrollFixed {
   border-radius: 50%;
   color: #a2a2a2;
   transition: background-color 0.3s; }
-  .blog__more:hover {
+  .blog__more.hover, .blog__more:active {
     background-color: #737373; }
-    .blog__more:hover .blog__more-icon {
+    .blog__more.hover .blog__more-icon, .blog__more:active .blog__more-icon {
       color: white; }
 
 .blog__more-icon {
@@ -5574,14 +5582,15 @@ html.scrollFixed {
     flex: 0 1 25%; }
     @media (max-width: 600px) {
       .follow-links__item {
+        padding: 2em 0em;
         flex: 0 1 50%; } }
 
 .follow-item {
   max-width: 20em; }
-  .follow-item:hover .hexagon__icon_big {
+  .follow-item.hover .hexagon__icon_big, .follow-item:active .hexagon__icon_big {
     color: #ff0036;
     stroke: none; }
-  .follow-item:hover .hexagon__icon_small-red {
+  .follow-item.hover .hexagon__icon_small-red, .follow-item:active .hexagon__icon_small-red {
     color: white;
     stroke: none; }
   .follow-item__link {
@@ -5734,14 +5743,17 @@ html.scrollFixed {
     height: 2.1875em;
     background-color: white;
     border: 1px solid #e7e7e7;
-    border-radius: 0;
+    border-radius: 6px;
     box-shadow: none;
     color: #505050;
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5625em;
-    appearance: none; }
+    appearance: none;
+    transition: box-shadow 0.3s; }
+    .form-map__input:focus {
+      box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.7); }
     .form-map__input_textarea {
       height: 5.5em;
       resize: none; }
@@ -5765,7 +5777,7 @@ html.scrollFixed {
     @media (max-width: 600px) {
       .form-map__button {
         max-width: 100%; } }
-    .form-map__button:hover {
+    .form-map__button.hover, .form-map__button:active {
       background-color: black; }
 
 .close {
@@ -5808,3 +5820,20 @@ html.scrollFixed {
 
 img.lazyloaded {
   opacity: 1; }
+
+.scrollBtn {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: none;
+  background-color: rgba(255, 0, 54, 0.5);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  transition: background-color 0.3s; }
+  .scrollBtn.hover, .scrollBtn:active {
+    background-color: #ff0036; }
