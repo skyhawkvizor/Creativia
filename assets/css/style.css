@@ -5345,24 +5345,17 @@ html.scrollFixed {
 }
 
 .header__inner {
-    min-height: 6.7em;
+    min-height: 5em;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
-@media (max-width: 1000px) {
-    .header {
-        font-size: 9px;
-    }
-}
-
 @media (max-width: 900px) {
     .header {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-size: 8px;
     }
 }
 
@@ -5376,11 +5369,6 @@ html.scrollFixed {
     position: absolute;
     top: 0;
     left: 20px;
-    font-size: inherit;
-}
-
-.header__nav {
-    font-size: inherit;
 }
 
 @media (max-width: 1100px) {
@@ -5396,6 +5384,7 @@ html.scrollFixed {
 }
 
 .header__burger {
+    margin: 1.4em 0;
     -ms-flex-item-align: center;
     align-self: center;
     z-index: 10;
@@ -5410,12 +5399,19 @@ html.scrollFixed {
 
 .logo {
     width: 25.2em;
-    height: 10.4em;
+    height: 10em;
     background-image: url(../images/header/logoBg.svg);
     background-repeat: no-repeat;
     background-position: 3px -2px;
     background-size: 98% 98%;
     overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    .logo {
+        width: 23em;
+        height: 9em;
+    }
 }
 
 .logo_footer {
@@ -5458,60 +5454,52 @@ html.scrollFixed {
 }
 
 .nav {
-    -ms-flex: 0 1 72%;
-    flex: 0 1 72%;
+    margin: 0 -1em;
+    -ms-flex: 0 1 79%;
+    flex: 0 1 79%;
     display: -ms-flexbox;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000000;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 @media (max-width: 900px) {
     .nav {
         display: none;
-        width: 100%;
         -ms-flex: 0 1 100%;
         flex: 0 1 100%;
         -ms-flex-order: 1;
         order: 1;
-    }
-
-    .menuOpen .nav {
-        display: -ms-flexbox;
-        display: flex;
-    }
-}
-
-.nav__list {
-    margin: 0 -1em;
-    -ms-flex: 0 1 100%;
-    flex: 0 1 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 900px) {
-    .nav__list {
         -ms-flex-flow: column;
         flex-flow: column;
-        -ms-flex-align: center;
-        align-items: center;
         overflow-y: auto;
         -ms-flex-pack: unset;
         justify-content: unset;
         scrollbar-width: thin;
     }
+
+    .menuOpen .nav {
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+    }
 }
 
-.nav__item {
-    padding: 1em;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+.nav__link {
+    padding: 1.2em 0.9em;
+    color: inherit;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
     position: relative;
     color: #a4a4a4;
     transition: color;
@@ -5519,17 +5507,17 @@ html.scrollFixed {
 }
 
 @media (max-width: 900px) {
-    .nav__item {
+    .nav__link {
         margin: 18px 0px 18px 0px;
         padding: 12px 0px 12px 0px;
     }
 
-    .nav__item:first-child {
+    .nav__link:first-child {
         margin: 38px 0px 18px 0px;
     }
 }
 
-.nav__item::before, .nav__item::after {
+.nav__link::before, .nav__link::after {
     content: "";
     display: block;
     width: 2.7em;
@@ -5544,32 +5532,24 @@ html.scrollFixed {
     transition-duration: 0.3s;
 }
 
-.nav__item::before {
+.nav__link::before {
     top: 0;
 }
 
-.nav__item::after {
+.nav__link::after {
     bottom: 0;
 }
 
-.nav__item:hover {
+.nav__link:hover {
     color: white;
 }
 
-.nav__item.active {
+.nav__link.active {
     color: white;
 }
 
-.nav__item.active::before, .nav__item.active::after {
+.nav__link.active::before, .nav__link.active::after {
     opacity: 1;
-}
-
-.nav__link {
-    color: inherit;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
 }
 
 .intro-section {
@@ -5821,12 +5801,19 @@ html.scrollFixed {
 
 .logo {
     width: 25.2em;
-    height: 10.4em;
+    height: 10em;
     background-image: url(../images/header/logoBg.svg);
     background-repeat: no-repeat;
     background-position: 3px -2px;
     background-size: 98% 98%;
     overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    .logo {
+        width: 23em;
+        height: 9em;
+    }
 }
 
 .logo_footer {
@@ -8421,33 +8408,10 @@ img.lazyloaded {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 100;
+    z-index: 2;
     transition: background-color 0.3s;
 }
 
 .scrollBtn.hover, .scrollBtn:active {
     background-color: #ff0036;
-}
-
-.test {
-    opacity: 0.9;
-    background-color: white;
-}
-
-.test:hover {
-    opacity: 1;
-    background-color: #df0030;
-}
-
-.test #test {
-    border: 1px solid;
-    pointer-events: auto;
-}
-
-.test #test.hover {
-    background-color: black;
-}
-
-.test #test:active {
-    background-color: green;
 }
