@@ -8,9 +8,6 @@
 	<!-- Useful meta tags -->
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-	<!-- <meta name="viewport" id="desktop"> -->
-	<meta name="robots" content="index, follow">
-	<meta name="google" content="notranslate">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Creativia">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
@@ -63,49 +60,44 @@
 			</div>
 			<!-- <nav class="header__nav nav" data-da="header, 2, 900"> -->
 			<nav class="header__nav nav">
-				<a href="#intro" class="nav__link">
-					Home
-				</a>
-				<a href="#about" class="nav__link">
-					About us
-				</a>
-				<a href="#portfolio" class="nav__link">
-					Portfolio
-				</a>
-				<a href="#clients" class="nav__link">
-					Clients
-				</a>
-				<a href="#team" class="nav__link">
-					Team
-				</a>
-				<a href="#services" class="nav__link">
-					Services
-				</a>
-				<a href="#blog" class="nav__link">
-					Blog
-				</a>
-				<a href="#contact" class="nav__link">
-					Contact
-				</a>
+				<div class="nav__links-wrap">
+					<div class="nav__links">
+						<a href="#intro" class="nav__link">
+							Home
+						</a>
+						<a href="#about" class="nav__link">
+							About us
+						</a>
+						<a href="#portfolio" class="nav__link">
+							Portfolio
+						</a>
+						<a href="#clients" class="nav__link">
+							Clients
+						</a>
+						<a href="#team" class="nav__link">
+							Team
+						</a>
+						<a href="#services" class="nav__link">
+							Services
+						</a>
+						<a href="#blog" class="nav__link">
+							Blog
+						</a>
+						<a href="#contact" class="nav__link">
+							Contact
+						</a>
+					</div>
+				</div>
+	
 			</nav>
 			<div class="header__burger burger"><span></span></div>
 		</div>
 	
 	</header>	<main class="main">
-
-		<!-- <div class="test">
-			<button class="slide__button slide__button_red " id="test" name="button1">
-				<span class="slide__button-text">
-					features
-				</span>
-			</button>
-		</div> -->
-
 		<section id="intro" class="intro-section">
-			<div class="intro-section__slider slider">
-		
-				<div class="slider__slide slide">
-					<picture class="slide__img">
+			<div class="intro-section__slider intro-slider">
+				<div class="intro-slider__intro-slide intro-slide">
+					<picture class="intro-slide__img">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhaAHCAYAAAP///wAAACH5BAEAAAEALAAAAABoAcIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxT+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyCNmBQAAOw=="
 							data-srcset="assets/images/intro/360.webp 1x, assets/images/intro/360@2x.webp 2x, assets/images/intro/360@3x.webp 3x, assets/images/intro/360@4x.webp 4x"
@@ -176,8 +168,8 @@
 							data-srcset="assets/images/intro/1400@2x.png 2x, assets/images/intro/1400@3x.png 3x, assets/images/intro/1400@4x.png 4x"
 							width="1400" height="630" alt="background">
 					</picture>
-					<div class="slide__content padding container">
-						<div class="slide__title title-section slide__title title-section_mb48">
+					<div class="intro-slide__content padding container">
+						<div class="intro-slide__title title-section intro-slide__title title-section_mb48">
 							<h2 class="title-section__title title-section__title_white">
 								why
 								<span class="title-section__title-accent">
@@ -190,25 +182,25 @@
 								tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
 								condimentum vitae, </p>
 						</div>
-						<div class="slide__buttons">
-							<button class="slide__button slide__button_red hoverEffect" name="button1">
-								<span class="slide__button-text">
+						<div class="intro-slide__buttons">
+							<button class="intro-slide__button intro-slide__button_red hoverEffect" name="button1">
+								<span class="intro-slide__button-text">
 									features
 								</span>
 							</button>
-							<button class="slide__button hoverEffect" name="button2">
-								<span class="slide__button-text">
+							<button class="intro-slide__button hoverEffect" name="button2">
+								<span class="intro-slide__button-text">
 									Free PSD
 								</span>
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="slider__slide slide">
-					<picture class="slide__img">
+				<div class="intro-slider__intro-slide intro-slide">
+					<picture class="intro-slide__img">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhaAHCAYAAAP///wAAACH5BAEAAAEALAAAAABoAcIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxT+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyCNmBQAAOw=="
-							data-srcset="assets/images/intro/360.webp 1x, assets/images/intro/360@2x.webp 2x, assets/images/intro/360@3x.webp 3x, assets/images/360@4x.webp 4x"
+							data-srcset="assets/images/intro/360.webp 1x, assets/images/intro/360@2x.webp 2x, assets/images/intro/360@3x.webp 3x, assets/images/intro/360@4x.webp 4x"
 							type="image/webp" media="(max-width: 360px)">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhaAHCAYAAAP///wAAACH5BAEAAAEALAAAAABoAcIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxT+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyCNmBQAAOw=="
@@ -218,7 +210,7 @@
 		
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhkAHCAYAAAP///wAAACH5BAEAAAEALAAAAACQAcIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fx5+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabglTAQA7"
-							data-srcset="assets/images/intro/400.webp 1x, assets/images/intro/400@2x.webp 2x, assets/images/intro/400@3x.webp 3x, assets/images/400@4x.webp 4x"
+							data-srcset="assets/images/intro/400.webp 1x, assets/images/intro/400@2x.webp 2x, assets/images/intro/400@3x.webp 3x, assets/images/intro/400@4x.webp 4x"
 							type="image/webp" media="(max-width: 400px)">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhkAHCAYAAAP///wAAACH5BAEAAAEALAAAAACQAcIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fx5+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabglTAQA7"
@@ -228,7 +220,7 @@
 		
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhWALCAYAAAP///wAAACH5BAEAAAEALAAAAABYAsIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHoskbLLKLstss84+C2200k5LbbXWXottttpuy2233n4LbrjiDlQAADs="
-							data-srcset="assets/images/intro/600.webp 1x, assets/images/intro/600@2x.webp 2x, assets/images/intro/600@3x.webp 3x, assets/images/600@4x.webp 4x"
+							data-srcset="assets/images/intro/600.webp 1x, assets/images/intro/600@2x.webp 2x, assets/images/intro/600@3x.webp 3x, assets/images/intro/600@4x.webp 4x"
 							type="image/webp" media="(max-width: 600px)">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhWALCAYAAAP///wAAACH5BAEAAAEALAAAAABYAsIBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHoskbLLKLstss84+C2200k5LbbXWXottttpuy2233n4LbrjiDlQAADs="
@@ -238,7 +230,7 @@
 		
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhIAP+AYAAAP///wAAACH5BAEAAAEALAAAAAAgA/4BAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov2bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKv1sAADs="
-							data-srcset="assets/images/intro/800.webp 1x, assets/images/intro/800@2x.webp 2x, assets/images/intro/800@3x.webp 3x, assets/images/800@4x.webp 4x"
+							data-srcset="assets/images/intro/800.webp 1x, assets/images/intro/800@2x.webp 2x, assets/images/intro/800@3x.webp 3x, assets/images/intro/800@4x.webp 4x"
 							type="image/webp" media="(max-width: 800px)">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhIAP+AYAAAP///wAAACH5BAEAAAEALAAAAAAgA/4BAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov2bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKv1sAADs="
@@ -248,7 +240,7 @@
 		
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlh6AN2AoAAAP///wAAACH5BAEAAAEALAAAAADoA3YCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKIZFa+IxSxqcYtc7KIXvwjGMIpxjGQs4xgLAAA7"
-							data-srcset="assets/images/intro/1000.webp 1x, assets/images/intro/1000@2x.webp 2x, assets/images/intro/1000@3x.webp 3x, assets/images/1000@4x.webp 4x"
+							data-srcset="assets/images/intro/1000.webp 1x, assets/images/intro/1000@2x.webp 2x, assets/images/intro/1000@3x.webp 3x, assets/images/intro/1000@4x.webp 4x"
 							type="image/webp" media="(max-width: 1000px)">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlh6AN2AoAAAP///wAAACH5BAEAAAEALAAAAADoA3YCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKIZFa+IxSxqcYtc7KIXvwjGMIpxjGQs4xgLAAA7"
@@ -258,7 +250,7 @@
 		
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhsAR2AoAAAP///wAAACH5BAEAAAEALAAAAACwBHYCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKKtFa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWimogAAOw=="
-							data-srcset="assets/images/intro/1200.webp 1x, assets/images/intro/1200@2x.webp 2x, assets/images/intro/1200@3x.webp 3x, assets/images/1200@4x.webp 4x"
+							data-srcset="assets/images/intro/1200.webp 1x, assets/images/intro/1200@2x.webp 2x, assets/images/intro/1200@3x.webp 3x, assets/images/intro/1200@4x.webp 4x"
 							type="image/webp" media="(max-width: 1200px)">
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlhsAR2AoAAAP///wAAACH5BAEAAAEALAAAAACwBHYCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKKtFa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWimogAAOw=="
@@ -268,16 +260,16 @@
 		
 						<source class="lazyload"
 							srcset="data:image/gif;base64,R0lGODlheAV2AoAAAP///wAAACH5BAEAAAEALAAAAAB4BXYCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEM2HwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmbCsAADs="
-							data-srcset="assets/images/intro/1400.webp 1x, assets/images/intro/1400@2x.webp 2x, assets/images/intro/1400@3x.webp 3x, assets/images/1400@4x.webp 4x"
+							data-srcset="assets/images/intro/1400.webp 1x, assets/images/intro/1400@2x.webp 2x, assets/images/intro/1400@3x.webp 3x, assets/images/intro/1400@4x.webp 4x"
 							type="image/webp">
 						<img class="lazyload"
 							src="data:image/gif;base64,R0lGODlheAV2AoAAAP///wAAACH5BAEAAAEALAAAAAB4BXYCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEM2HwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmbCsAADs="
 							data-src="assets/images/intro/1400.png"
 							data-srcset="assets/images/intro/1400@2x.png 2x, assets/images/intro/1400@3x.png 3x, assets/images/intro/1400@4x.png 4x"
-							width="1400" height="630" alt="img">
+							width="1400" height="630" alt="background">
 					</picture>
-					<div class="slide__content padding container">
-						<div class="slide__title title-section slide__title title-section_mb48">
+					<div class="intro-slide__content padding container">
+						<div class="intro-slide__title title-section intro-slide__title title-section_mb48">
 							<h2 class="title-section__title title-section__title_white">
 								why
 								<span class="title-section__title-accent">
@@ -290,21 +282,20 @@
 								tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
 								condimentum vitae, </p>
 						</div>
-						<div class="slide__buttons">
-							<button class="slide__button slide__button_red hoverEffect" name="button1">
-								<span class="slide__button-text">
+						<div class="intro-slide__buttons">
+							<button class="intro-slide__button intro-slide__button_red hoverEffect" name="button1">
+								<span class="intro-slide__button-text">
 									features
 								</span>
 							</button>
-							<button class="slide__button hoverEffect" name="button2">
-								<span class="slide__button-text">
+							<button class="intro-slide__button hoverEffect" name="button2">
+								<span class="intro-slide__button-text">
 									Free PSD
 								</span>
 							</button>
 						</div>
 					</div>
 				</div>
-		
 			</div>
 			<button class="intro-section__button intro-section__button_prev hoverEffect" title="prev">
 				<svg class="intro-section__icon intro-section__icon_prev">
@@ -317,7 +308,6 @@
 				</svg>
 			</button>
 		</section>		<section id="about" class="about-section padding container">
-			<div id="log"></div>
 			<div class="about-section__title title-section">
 				<h2 class="title-section__title">
 					about
@@ -351,14 +341,15 @@
 									</div>
 								</div>
 								<div class="accordion__content open animation">
-									<p class="accordion__description">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
-										ac
-										nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem
-										eu
-										tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
-										condimentum vitae.
-									</p>
+									<div class="accordion__description-wrap">
+										<p class="accordion__description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu
+											ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris
+											dictum
+											lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi
+											lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi
+										</p>
+									</div>
 								</div>
 		
 							</li>
@@ -370,11 +361,17 @@
 									</div>
 								</div>
 								<div class="accordion__content">
-									<p class="accordion__description">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
-										ac
+									<div class="accordion__description-wrap">
+										<p class="accordion__description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu
+											ligula
+											ac
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu
+											ligula
+											ac
 		
-									</p>
+										</p>
+									</div>
 								</div>
 							</li>
 							<li class="accordion__item">
@@ -385,14 +382,18 @@
 									</div>
 								</div>
 								<div class="accordion__content">
-									<p class="accordion__description">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
-										ac
-										nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem
-										eu
-										tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
-										condimentum vitae.
-									</p>
+									<div class="accordion__description-wrap">
+										<p class="accordion__description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu
+											ligula
+											ac
+											nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum
+											lorem
+											eu
+											tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo
+											condimentum vitae.
+										</p>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -639,7 +640,7 @@
 									</svg>
 								</div>
 								<div class="portfolio-item__name">
-									Transformation
+									Trans
 								</div>
 							</a>
 						</div>
@@ -1370,11 +1371,11 @@
 			</div>
 			<ul class="skills-section__skill-list skill-list">
 				<li class="skill-list__skill skill">
-					<div class="skill__value">
-						<span class="skill__value-accent">
-							100
-						</span>
-						%
+					<div class="skill__circle" data-value="100" data-color="#ff0036">
+						<div class="skill__value">
+							<span class="skill__accent"></span>
+							<span class="skill__procent">%</span>
+						</div>
 					</div>
 					<div class="skill__title">
 						photoshop
@@ -1384,11 +1385,11 @@
 					</p>
 				</li>
 				<li class="skill-list__skill skill">
-					<div class="skill__value">
-						<span class="skill__value-accent">
-							80
-						</span>
-						%
+					<div class="skill__circle" data-value="90" data-color="#ff0036">
+						<div class="skill__value">
+							<span class="skill__accent"></span>
+							<span class="skill__procent">%</span>
+						</div>
 					</div>
 					<div class="skill__title">
 						HTML
@@ -1398,11 +1399,11 @@
 					</p>
 				</li>
 				<li class="skill-list__skill skill">
-					<div class="skill__value">
-						<span class="skill__value-accent">
-							70
-						</span>
-						%
+					<div class="skill__circle" data-value="75" data-color="#ff0036">
+						<div class="skill__value">
+							<span class="skill__accent"></span>
+							<span class="skill__procent">%</span>
+						</div>
 					</div>
 					<div class="skill__title">
 						php
@@ -1412,11 +1413,11 @@
 					</p>
 				</li>
 				<li class="skill-list__skill skill">
-					<div class="skill__value">
-						<span class="skill__value-accent">
-							90
-						</span>
-						%
+					<div class="skill__circle" data-value="80" data-color="#ff0036">
+						<div class="skill__value">
+							<span class="skill__accent"></span>
+							<span class="skill__procent">%</span>
+						</div>
 					</div>
 					<div class="skill__title">
 						wordpress
@@ -1578,160 +1579,164 @@
 					Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
 				</p>
 			</div>
-			<ul class="bestseller-section__cards bestseller-cards">
-				<li class="bestseller-cards__card bestseller-card">
-					<div class="bestseller-card__title">
-						Reseller Res
-						Reseller Res
-					</div>
-					<div class="bestseller-card__price">
-						<div class="bestseller-card__price-number">199$</div>
-						<span class="bestseller-card__price-sub">
-							year
-						</span>
-					</div>
-					<ul class="bestseller-card__list">
-						<li class="bestseller-card__item">
-							CPU E3.3 1230-3GHz 8MB-V2 CPU E3.3 1230-3GHz 8MB-V2 CPU E3.3 1230-3GHz 8MB-V2
-						</li>
-						<li class="bestseller-card__item">
-							HARD 500GB SATA 7200 RPM
-							HARD 500GB SATA 7200 RPM
-						</li>
-						<li class="bestseller-card__item">
-							RAM 8GB DDR1333 3MHZ ECC
-							RAM 8GB DDR1333 3MHZ ECC
-						</li>
-						<li class="bestseller-card__item">
-							Traffic 10 TB
-							Traffic 10 TB
-						</li>
-						<li class="bestseller-card__item">
-							Connection 100 MB
-							Connection 100 MB
-						</li>
-						<li class="bestseller-card__item">
-							5IP
-							5IP
-						</li>
-					</ul>
-					<div class="bestseller-card__button-wrapper">
-						<a href="#" class="bestseller-card__button hoverEffect">
-							Oreder now
-							Oreder now
-						</a>
-					</div>
-				</li>
-				<li class="bestseller-cards__card bestseller-card">
-					<div class="bestseller-card__title">
-						Reseller
-					</div>
-		
-					<div class="bestseller-card__price">
-						<div class="bestseller-card__price-number">199$</div>
-						<span class="bestseller-card__price-sub">
-							year
-						</span>
-					</div>
-					<ul class="bestseller-card__list">
-						<li class="bestseller-card__item">
-							CPU E3.3 1230-3GHz 8MB-V2
-						</li>
-						<li class="bestseller-card__item">
-							HARD 500GB SATA 7200 RPM
-						</li>
-						<li class="bestseller-card__item">
-							RAM 8GB DDR1333 3MHZ ECC
-						</li>
-						<li class="bestseller-card__item">
-							Traffic 10 TB
-						</li>
-						<li class="bestseller-card__item">
-							Connection 100 MB
-						</li>
-						<li class="bestseller-card__item">
-							5IP
-						</li>
-					</ul>
-					<div class="bestseller-card__button-wrapper">
-						<a href="#" class="bestseller-card__button hoverEffect">
-							Oreder now
-						</a>
-					</div>
-				</li>
-				<li class="bestseller-cards__card bestseller-card">
-					<div class="bestseller-card__title">
-						Reseller
-					</div>
-					<div class="bestseller-card__price">
-						<div class="bestseller-card__price-number"> 199$</div>
-						<span class="bestseller-card__price-sub">
-							year
-						</span>
-					</div>
-					<ul class="bestseller-card__list">
-						<li class="bestseller-card__item">
-							CPU E3.3 1230-3GHz 8MB-V2
-						</li>
-						<li class="bestseller-card__item">
-							HARD 500GB SATA 7200 RPM
-						</li>
-						<li class="bestseller-card__item">
-							RAM 8GB DDR1333 3MHZ ECC
-						</li>
-						<li class="bestseller-card__item">
-							Traffic 10 TB
-						</li>
-						<li class="bestseller-card__item">
-							Connection 100 MB
-						</li>
-						<li class="bestseller-card__item">
-							5IP
-						</li>
-					</ul>
-					<div class="bestseller-card__button-wrapper">
-						<a href="#" class="bestseller-card__button hoverEffect">
-							Oreder now
-						</a>
-					</div>
-				</li>
-				<li class="bestseller-cards__card bestseller-card">
-					<div class="bestseller-card__title">
-						Reseller
-					</div>
-					<div class="bestseller-card__price">
-						<div class="bestseller-card__price-number">199$</div>
-						<span class="bestseller-card__price-sub">
-							year
-						</span>
-					</div>
-					<ul class="bestseller-card__list">
-						<li class="bestseller-card__item">
-							CPU E3.3 1230-3GHz 8MB-V2
-						</li>
-						<li class="bestseller-card__item">
-							HARD 500GB SATA 7200 RPM
-						</li>
-						<li class="bestseller-card__item">
-							RAM 8GB DDR1333 3MHZ ECC
-						</li>
-						<li class="bestseller-card__item">
-							Traffic 10 TB
-						</li>
-						<li class="bestseller-card__item">
-							Connection 100 MB
-						</li>
-						<li class="bestseller-card__item">
-							5IP
-						</li>
-					</ul>
-					<div class="bestseller-card__button-wrapper">
-						<a href="#" class="bestseller-card__button hoverEffect">
-							Oreder now
-						</a>
-					</div>
-				</li>
-			</ul>
+			<div class="bestseller-section__bestseller-slider bestseller-slider">
+				<ul class="bestseller-slider__cards">
+					<li class="bestseller-slider__card bestseller-card">
+						<div class="bestseller-card__title">
+							Reseller
+						</div>
+						<div class="bestseller-card__price">
+							<div class="bestseller-card__price-number">199$</div>
+							<span class="bestseller-card__price-sub">
+								year
+							</span>
+						</div>
+						<ul class="bestseller-card__list">
+							<li class="bestseller-card__item">
+								CPU E3.3 1230-3GHz 8MB-V2
+							</li>
+							<li class="bestseller-card__item">
+								HARD 500GB SATA 7200 RPM
+							</li>
+							<li class="bestseller-card__item">
+								RAM 8GB DDR1333 3MHZ ECC
+							</li>
+							<li class="bestseller-card__item">
+								Traffic 10 TB
+							</li>
+							<li class="bestseller-card__item">
+								Connection 100 MB
+							</li>
+							<li class="bestseller-card__item">
+								5IP
+							</li>
+						</ul>
+						<div class="bestseller-card__button-wrapper">
+							<a href="#" class="bestseller-card__button hoverEffect">
+								Oreder now
+							</a>
+						</div>
+					</li>
+					<li class="bestseller-slider__card bestseller-card">
+						<div class="bestseller-card__title">
+							Reseller
+						</div>
+						<div class="bestseller-card__price">
+							<div class="bestseller-card__price-number">199$</div>
+							<span class="bestseller-card__price-sub">
+								year
+							</span>
+						</div>
+						<ul class="bestseller-card__list">
+							<li class="bestseller-card__item">
+								CPU E3.3 1230-3GHz 8MB-V2
+							</li>
+							<li class="bestseller-card__item">
+								HARD 500GB SATA 7200 RPM
+							</li>
+							<li class="bestseller-card__item">
+								RAM 8GB DDR1333 3MHZ ECC
+							</li>
+							<li class="bestseller-card__item">
+								Traffic 10 TB
+							</li>
+							<li class="bestseller-card__item">
+								Connection 100 MB
+							</li>
+							<li class="bestseller-card__item">
+								5IP
+							</li>
+						</ul>
+						<div class="bestseller-card__button-wrapper">
+							<a href="#" class="bestseller-card__button hoverEffect">
+								Oreder now
+							</a>
+						</div>
+					</li>
+					<li class="bestseller-slider__card bestseller-card">
+						<div class="bestseller-card__title">
+							Reseller
+						</div>
+						<div class="bestseller-card__price">
+							<div class="bestseller-card__price-number">199$</div>
+							<span class="bestseller-card__price-sub">
+								year
+							</span>
+						</div>
+						<ul class="bestseller-card__list">
+							<li class="bestseller-card__item">
+								CPU E3.3 1230-3GHz 8MB-V2
+							</li>
+							<li class="bestseller-card__item">
+								HARD 500GB SATA 7200 RPM
+							</li>
+							<li class="bestseller-card__item">
+								RAM 8GB DDR1333 3MHZ ECC
+							</li>
+							<li class="bestseller-card__item">
+								Traffic 10 TB
+							</li>
+							<li class="bestseller-card__item">
+								Connection 100 MB
+							</li>
+							<li class="bestseller-card__item">
+								5IP
+							</li>
+						</ul>
+						<div class="bestseller-card__button-wrapper">
+							<a href="#" class="bestseller-card__button hoverEffect">
+								Oreder now
+							</a>
+						</div>
+					</li>
+					<li class="bestseller-slider__card bestseller-card">
+						<div class="bestseller-card__title">
+							Reseller
+						</div>
+						<div class="bestseller-card__price">
+							<div class="bestseller-card__price-number">199$</div>
+							<span class="bestseller-card__price-sub">
+								year
+							</span>
+						</div>
+						<ul class="bestseller-card__list">
+							<li class="bestseller-card__item">
+								CPU E3.3 1230-3GHz 8MB-V2
+							</li>
+							<li class="bestseller-card__item">
+								HARD 500GB SATA 7200 RPM
+							</li>
+							<li class="bestseller-card__item">
+								RAM 8GB DDR1333 3MHZ ECC
+							</li>
+							<li class="bestseller-card__item">
+								Traffic 10 TB
+							</li>
+							<li class="bestseller-card__item">
+								Connection 100 MB
+							</li>
+							<li class="bestseller-card__item">
+								5IP
+							</li>
+						</ul>
+						<div class="bestseller-card__button-wrapper">
+							<a href="#" class="bestseller-card__button hoverEffect">
+								Oreder now
+							</a>
+						</div>
+					</li>
+				</ul>
+				<button class="bestseller-slider__button bestseller-slider__button_prev hoverEffect">
+					<svg class="bestseller-slider__button-icon bestseller-slider__button-icon_prev">
+						<use xlink:href="assets/images/icons/arrow.svg#arrow"></use>
+					</svg>
+				</button>
+				<button class="bestseller-slider__button bestseller-slider__button_next hoverEffect">
+					<svg class="bestseller-slider__button-icon bestseller-slider__button-icon_next">
+						<use xlink:href="assets/images/icons/arrow.svg#arrow"></use>
+					</svg>
+				</button>
+			</div>
 		</section>		<section class="twitter-section padding bottom-decoration bottom-decoration_red">
 			<h2 hidden>title</h2>
 			<a href="#" class="twitter-section__link" rel="nofollow noopener noreferrer" target="_blank" title="twitter">
@@ -1899,7 +1904,7 @@
 					</h2>
 				</div>
 				<ul class="follow-section__links follow-links">
-					<li class="follow-links__item follow-item hoverEffect clickable">
+					<li class="follow-links__item follow-item hoverEffect">
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="facebook">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
@@ -1912,7 +1917,7 @@
 							20000
 						</a>
 					</li>
-					<li class="follow-links__item follow-item hoverEffect clickable">
+					<li class="follow-links__item follow-item hoverEffect">
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="twitter">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
@@ -1925,7 +1930,7 @@
 							99900
 						</a>
 					</li>
-					<li class="follow-links__item follow-item hoverEffect clickable">
+					<li class="follow-links__item follow-item hoverEffect">
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="pinterest">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
@@ -1938,7 +1943,7 @@
 							5000
 						</a>
 					</li>
-					<li class="follow-links__item follow-item hoverEffect clickable">
+					<li class="follow-links__item follow-item hoverEffect">
 						<a href="#" class="follow-item__link" rel="nofollow noopener noreferrer" target="_blank" title="g+">
 							<div class="follow-item__hexagon hexagon hexagon_follow">
 								<svg class="hexagon__icon hexagon__icon_big hexagon__icon_follow">
@@ -2007,9 +2012,16 @@
 					<button name="open" class="map-section__openner">SEND MESSAGE</button>
 				</div>
 			</div>
-		</section>
-	</main>
-
+		</section>	</main>
+	<!-- <div class="circle" id="circle-a">
+		<strong></strong>
+	</div> -->
+	<!-- <div class="circle" id="circle-b">
+		<strong></strong>
+	</div>
+	<div class="circle" id="circle-c">
+		<strong></strong>
+	</div> -->
 	<footer class="footer">
 		<div class="footer__logo logo logo_footer">
 			<a href="#" class="logo__link logo__link_footer">
