@@ -1698,6 +1698,8 @@ html.scrollFixed {
         opacity: 1; } }
     .portfolio-item__cover.opacityAnimation {
       transition: opacity 0.3s; }
+    .portfolio-item__cover.no-clickable {
+      pointer-events: none; }
   .portfolio-item__cover-content {
     max-height: 100%;
     overflow: hidden;
@@ -2062,7 +2064,7 @@ html.scrollFixed {
     scrollbar-color: #a4a4a4;
     scrollbar-width: thin; }
     @media (min-width: 1367px) {
-      .team-item__cover.hover {
+      .hover .team-item__cover {
         opacity: 1; } }
     @media (max-width: 1366px) {
       .team-item__cover {
@@ -2073,7 +2075,7 @@ html.scrollFixed {
         opacity: 1;
         overflow: auto;
         pointer-events: all; } }
-    .team-item__cover.opacityAnimation {
+    .opacityAnimation .team-item__cover {
       transition: opacity 0.3s; }
   .team-item__cover-list {
     max-width: 100%;
@@ -2102,6 +2104,8 @@ html.scrollFixed {
     padding: 0px 0px 3.1em 0px;
     flex-grow: 1;
     border: 1px solid #e7e7e7; }
+    .team-item__content.no-clickable {
+      pointer-events: none; }
   .team-item__name {
     margin: 0px 0px 0.8em 0px;
     padding: 0 10px;
@@ -2111,8 +2115,9 @@ html.scrollFixed {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    transition: color;
-    transition-duration: 0.3s; }
+    transition: color 0.3s; }
+    .hover .team-item__name {
+      color: #ff0036; }
   .team-item__duty {
     padding: 0 10px;
     color: #505050;
@@ -2684,27 +2689,32 @@ html.scrollFixed {
   .map-section__form {
     pointer-events: all; }
   .map-section__openner-wrap {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    right: 80px;
+    left: 0;
+    right: 0;
     bottom: 0;
     z-index: 1;
     pointer-events: all; }
   .map-section__openner {
     padding: 15px 20px 15px 20px;
     min-width: 100px;
-    border: 1px solid #a4a4a4;
+    border: 1px solid #ff0036;
     border-bottom: none;
     border-radius: 20px 20px 0px 0px;
-    color: #ff0036;
+    background-color: #ff0036;
+    color: #e7e7e7;
     font-family: "Raleway", sans-serif;
     font-size: 1.6em;
     font-weight: 700;
     text-transform: none;
     transition: background-color 0.3s; }
-    .map-section__openner:active {
-      background-color: #c4c4c4;
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      -webkit-tap-highlight-color: transparent; }
+    @media (max-width: 500px) {
+      .map-section__openner {
+        margin: 0px 0px 0px -80px; } }
+    .map-section__openner.hover, .map-section__openner:active {
+      background-color: #990020; }
 
 .form-map {
   padding: 3.2em 4.8em 4.8em 4.4em;

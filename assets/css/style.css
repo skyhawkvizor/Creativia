@@ -2978,7 +2978,7 @@ html.scrollFixed {
 }
 
 @media (min-width: 1367px) {
-    .team-item__cover.hover {
+    .hover .team-item__cover {
         opacity: 1;
     }
 }
@@ -2996,7 +2996,7 @@ html.scrollFixed {
     }
 }
 
-.team-item__cover.opacityAnimation {
+.opacityAnimation .team-item__cover {
     transition: opacity 0.3s;
 }
 
@@ -3064,8 +3064,11 @@ html.scrollFixed {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    transition: color;
-    transition-duration: 0.3s;
+    transition: color 0.3s;
+}
+
+.hover .team-item__name {
+    color: #ff0036;
 }
 
 .team-item__duty {
@@ -3130,42 +3133,28 @@ html.scrollFixed {
     align-items: center;
 }
 
-.skill__value {
+.skill__circle {
     margin: 0px 0px 0.55em 0px;
     width: 3.625em;
     height: 3.625em;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: white;
-    background-clip: padding-box;
-    border: solid 0.075em transparent;
-    border-radius: 50%;
-    color: #000000;
-    font-family: "Lato", sans-serif;
     font-size: 4em;
-    font-weight: 300;
-    line-height: 2.372em;
     position: relative;
 }
 
-.skill__value:before {
-    content: "";
+.skill__value {
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 2.372em;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -0.075em;
-    border-radius: inherit;
-    background: linear-gradient(to right, #ff0036, #e0e0e0);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.skill__value-accent {
+.skill__accent {
     color: #ff0036;
 }
 
@@ -4194,23 +4183,4 @@ html.scrollFixed {
 
 .scrollBtn.hover, .scrollBtn:active {
     background-color: #ff0036;
-}
-
-.circle {
-    width: 200px;
-    margin: 6px 20px 20px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    vertical-align: top;
-}
-
-.circle strong {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    line-height: 45px;
-    font-size: 43px;
 }
