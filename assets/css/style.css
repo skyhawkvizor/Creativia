@@ -1214,6 +1214,7 @@ html.scrollFixed {
 
 .intro-slider {
     width: 100%;
+    overflow: hidden;
 }
 
 .intro-slider__button {
@@ -3274,8 +3275,14 @@ html.scrollFixed {
     }
 }
 
+.bestseller-section__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 .bestseller-slider {
-    width: 100%;
     min-width: 0;
     position: relative;
     overflow: hidden;
@@ -3283,7 +3290,7 @@ html.scrollFixed {
 
 @media (min-width: 701px) {
     .bestseller-slider {
-        padding: 0 50px;
+        max-width: calc(100vw - 200px);
     }
 }
 
